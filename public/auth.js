@@ -90,6 +90,34 @@ let submit_users_id = document.getElementById('submit_users_id')
 
 // !event listeners
 
+
+// !users
+submit_users_id.addEventListener('click', getUsers)
+
+function getUsers(ev, req) {
+    ev.preventDefault()
+    let body = user.value
+    body = JSON.stringify({
+        body
+    })
+    let h = new Headers()
+    h.append('content-type', 'application/json')
+    let url = '/users'
+    let options = {
+        method: 'POST',
+        headers: h,
+        body: body
+    }
+    req = new Request(url, options)
+    fetch(req)
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.error(err))
+}
+
+
+
+// !register
 function fetchUrl(req) {
 
 

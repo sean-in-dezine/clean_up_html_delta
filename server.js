@@ -1,22 +1,44 @@
-const express = require('express')
-const app = express()
-const path = require('path')
+const express = require("express");
+const app = express();
+const path = require("path");
+const colors = require("colors");
+const morgan = require("morgan");
+const router = require('./routes')
 
-app.listen(3559, console.log('clean_up_html_ listening on port 3559'))
+const port = 3559;
+console.log('server'.brightMagenta)
+app.use(morgan("dev"));
+app.listen(port, console.log(`listening on port ${port}`.brightBlue.bold));
 
-app.use(express.static(__dirname + '/'))
+app.use(express.static(__dirname + "/"));
+app.use(router)
 
-// const router = require('./routes.js')
-// app.use(router)
-app.get('/', (req, res, next) => {
-    console.log(req.url, req.method)
-    console.log(req.originalUrl, req.method)
-    res.sendFile(__dirname + '/auth.html')
-})
-app.post('/', (req, res, next) => {
-    console.log(req.url, req.method)
-    console.log(req.originalUrl, req.method)
-    res.json({
-        success: 'true'
-    })
-})
+let request_logger = require("./middleware.js");
+request_logger = request_logger.request_logger;
+app.use("/", request_logger);
+
+let handlers = require('./handlers')
+handlers = handlers.handlers
+handlers()
+
+
+app.get("/", (req, res, next) => {
+  console.log(req.url, req.method);
+  console.log(req.originalUrl, req.method);
+  res.sendFile(__dirname + "/auth.html");
+});
+app.post("/", (req, res, next) => {
+  console.log(req.url, req.method);
+  console.log(req.originalUrl, req.method);
+  res.json({
+    success: "true",
+  });
+});
+
+app.post("/users", (req, res, next) => {
+  console.log(req.url, req.method);
+  console.log(req.originalUrl, req.method);
+  res.json({
+    success: "true",
+  });
+});
