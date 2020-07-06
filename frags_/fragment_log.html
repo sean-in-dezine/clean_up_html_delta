@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- entry date transaction count . full status history. 
+        full posession history. comments. chat -->
+    <div class="container">
+
+        <div class="entry" id="entry">
+            <span class="display" id="entrydisplay">
+                entry
+            </span>
+        </div>
+        <div class="date" id="date">
+            <span class="display" id="datedisplay">
+                date
+            </span>
+        </div>
+        <div class="transacton" id="transaction">
+            <span class="display" id="transactondisplay">
+                transaction
+            </span>
+        </div>
+        <div class="count" id="count">
+            <span class="display" id="countdisplay">
+                count
+            </span>
+        </div>
+        <div class="status" id="status">
+            <span class="display" id="statusdisplay">
+                status
+            </span>
+        </div>
+        <div class="posession" id="posession">
+            <span class="display" id="posessiondisplay">
+                posession
+            </span>
+        </div>
+        <div class="comments" id="comments">
+            <span class="display" id="commentsdisplay">
+                comments
+            </span>
+        </div>
+        <div class="chat" id="chat">
+            <span class="display" id="chatdisplay">
+                chat
+            </span>
+        </div>
+
+    </div>
+
+
+
+    <div class="li">
+        <!-- !append log items here -->
+        <!-- *ref-pending %sean -->
+    </div>
+
+    <script>
+        let display = document.querySelector('.display')
+        let status = document.querySelector('.status')
+        let comments = document.querySelector('.comments')
+        let posession = document.querySelector('.posession')
+        let chat = document.querySelector('.chat')
+        let transaction = document.querySelector('.transaction')
+        let entry = document.querySelector('.entry')
+        let date = document.querySelector('.date')
+        let count = document.querySelector('count')
+        let id_count = document.querySelector('id_count')
+        let id_chat = document.getElementById('chat')
+        let id_chatdisplay = document.getElementById('chatdisplay')
+        let id_commentdisplay = document.getElementById('commentdisplay')
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

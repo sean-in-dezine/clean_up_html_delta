@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .options {
+            grid-column: 1/5;
+        }
+
+        button {
+            width: 20vw;
+            height: 10VW;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- entry date transaction count . full status history. 
+        full posession history. comments. chat -->
+    <div class="container">
+        <div class="heading" id="heading">
+            <h1>Heading</h1>
+        </div>
+        <div class="entry" id="entry">
+            <span class="display" id="entrydisplay">
+                entry
+            </span>
+        </div>
+        <div class="date" id="date">
+            <span class="display" id="datedisplay">
+                date
+            </span>
+        </div>
+        <div class="transacton" id="transaction">
+            <span class="display" id="transactondisplay">
+                transaction
+            </span>
+        </div>
+        <div class="count" id="count">
+            <span class="display" id="countdisplay">
+                count
+            </span>
+        </div>
+        <div class="status" id="status">
+            <span class="display" id="statusdisplay">
+                status
+            </span>
+        </div>
+        <div class="posession" id="posession">
+            <span class="display" id="posessiondisplay">
+                posession
+            </span>
+        </div>
+        <div class="comments" id="comments">
+            <span class="display" id="commentsdisplay">
+                comments
+            </span>
+        </div>
+        <div class="chat" id="chat">
+            <span class="display" id="chatdisplay">
+                chat
+            </span>
+        </div>
+        <div class="options" id="options">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+        </div>
+
+    </div>
+
+
+    <script>
+        let display = document.querySelector('display')
+        let options = document.querySelector('options')
+        let chat = document.querySelector('chat')
+        let comments = document.querySelector('comments')
+        let = document.querySelector('')
+    </script>
+
+</body>
+
+</html>

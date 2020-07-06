@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .container>div {
+            width: 13em;
+            height: 15em;
+
+        }
+
+        .card {
+            background-color: blue;
+        }
+
+        .owner {
+            background-color: cadetblue;
+        }
+
+        .testpack {
+            background-color: blueviolet;
+        }
+
+        .log {
+            background-color: crimson;
+        }
+
+        .lifecycle {
+            background-color: darkcyan;
+        }
+
+        .status {
+            background-color: darkorchid;
+        }
+
+        .loopid {
+            background-color: darksalmon;
+        }
+
+        .actions {
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="shit" id="fetchcard">
+    <div class="container">
+        <div class="heading">
+            <div class="loopid">
+                <button class="data">
+                    <div class="display"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="system">
+                <button class="data">
+                    <div class="display"></div>
+                </button>
+            </div>
+
+            <div class="owner">
+                <button class="data">
+                    <div class="display"></div>
+                </button>
+            </div>
+
+            <div class="testpack">
+                <button class="data">
+                    <div class="display"></div>
+                </button>
+            </div>
+
+            <div class="log">
+                <button class="data">
+                    <div class="display"></div>
+                </button>
+            </div>
+
+            <div class="lifecycle">
+                <button class="data">
+                    <div class="display"></div>
+                </button>
+            </div>
+
+            <div class="status">
+                <button class="data">
+                    <div class="display"></div>
+                </button>
+            </div>
+
+            <div class="loopid">
+                <button class="data">
+                    <div class="display"></div>
+                </button>
+            </div>
+            <div class="actions">
+                <button class="data">
+                    <div class="display"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let card = document.querySelector('.card')
+        let system = document.querySelector('.system')
+        let owner = document.querySelector('.owner')
+        let testpack = document.querySelector('.testpack')
+        let loopid = document.querySelector('.loopid')
+        let actions = document.querySelector('.actions')
+        let status = document.querySelector('.status')
+        let lifecycle = document.querySelector('.lifecycle')
+        let log = document.querySelector('log')
+
+    </script>
+</body>
+
+
+</html>

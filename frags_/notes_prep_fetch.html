@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {}
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- !firstelement -->
+        <div class="clear">
+            <!-- button goes here -->
+        </div>
+        <!-- *begin notes -->
+        <div class="row">
+            <button class="remove">remove tag </button>
+            <input class="tag" id="tag" type="text" name="tag">
+            <button class="submit">submit tag</button>
+        </div>
+
+
+        <div class="row">
+            <button class="remove">remove tag</button>
+            <input type="text" id="addmore" class="addmore" name="addmore">
+            <button class="submit">submit tag</button>
+        </div>
+        <div class="row">
+            <button class="remove">remove message</button>
+            <input type="text" name="message" class="message" id="message">
+            <button class="submit">submit message</button>
+        </div>
+        <div class="popup">
+            <!-- !finish -->
+        </div>
+    </div>
+    <script>
+        let row = document.querySelector('.row')
+        let remove = document.querySelector('.remove')
+        let submit = document.querySelector('submit')
+        let tag = document.querySelector('.tag')
+        let popup = document.querySelector('.popup')
+        let addmore = document.querySelector('.addmore')
+
+
+        let id_message = document.getElementById('message')
+        let id_addmore = document.getElementById('addmore')
+        let id_tag = document.getElementById('tag')
+console.log(id_tag)
+    </script>
+</body>
+
+</html>

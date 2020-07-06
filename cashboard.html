@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/grid.css" />
+    <link rel="stylesheet" href="/css/cashboard.css" />
+    <link rel="stylesheet" href="/css/filters.css" />
+    <title>Fresh 10.0.0</title>
+  </head>
+
+  <body>
+    <div class="grid">
+      <!-- ?mainContainer -->
+      <!-- ?begincolumns -->
+      <div class="userbtns">
+        <a href="../../register" class="href">
+          <button id="userbutton">user button</button>
+        </a>
+      </div>
+
+      <div class="loopbtns">
+        <a href="../../loops" class="href">
+          <button id="loopbutton">go to loops</button></a
+        >
+      </div>
+
+      <!-- ?tableScreen -->
+      <!-- make default table pending -->
+      <div class="tables bg2" id="tables">
+        <!-- pending table -->
+        <div class="pending table default" id="pending">
+          <table class="real" id="tblPending">
+            <thead>
+              <h2>Pending</h2>
+              <tr>
+                <th>Loop</th>
+                <th>Status</th>
+                <th>From</th>
+                <th>Date</th>
+                <th class="xpand">Test</th>
+                <th class="xpand">Test</th>
+                <th class="xpand">Test</th>
+                <th class="xpand">Test</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>77-84-ABC</td>
+                <td>Waiting</td>
+                <td>Sean Kincaid</td>
+                <td>5/21/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+
+              <tr>
+                <td>48-84-ABC</td>
+                <td>Prelooped</td>
+                <td>Mary</td>
+                <td>5/24/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+
+              <tr>
+                <td>48-77-aab</td>
+                <td>Working</td>
+                <td>Tom Brady</td>
+                <td>5/22/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+
+              <tr>
+                <td>48-77-aab</td>
+                <td>Prelooped</td>
+                <td>Sean Kincaid</td>
+                <td>5/25/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+
+              <tr>
+                <td>77-77-aab</td>
+                <td>Needs hydro</td>
+                <td>Clark Kent</td>
+                <td>5/23/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+
+              <tr>
+                <td>77-84-ABC</td>
+                <td>Walking</td>
+                <td>Tracey Morgan</td>
+                <td>5/25/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- current table  -->
+        <div class="current table-container" id="current">
+          <!-- default: mine -->
+          <div class="mine table" id="mine">
+            <table class="real" id="tblCurrent">
+              <thead>
+                <h2>My current</h2>
+                <tr>
+                  <th>Loop</th>
+                  <th>Status</th>
+                  <th>From</th>
+                  <th>Date</th>
+                  <th class="xpand">Test</th>
+                  <th class="xpand">Test</th>
+                  <th class="xpand">Test</th>
+                  <th class="xpand">Test</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>78-ABC-DEF</td>
+                  <td>Working</td>
+                  <td>James Jones</td>
+                  <td>5/31/2020</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                </tr>
+
+                <tr>
+                  <td>48-84-ABC</td>
+                  <td>Prelooped</td>
+                  <td>Mary</td>
+                  <td>5/24/2020</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                </tr>
+
+                <tr>
+                  <td>47-QPF-LLOD</td>
+                  <td>READY.2.SELL</td>
+                  <td>Tom Brady</td>
+                  <td>5/22/2020</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                </tr>
+
+                <tr>
+                  <td>48-77-aab</td>
+                  <td>Prelooped</td>
+                  <td>Sean Kincaid</td>
+                  <td>5/25/2020</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                </tr>
+
+                <tr>
+                  <td>77-77-aab</td>
+                  <td>Needs hydro</td>
+                  <td>Clark Kent</td>
+                  <td>5/23/2020</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                </tr>
+
+                <tr>
+                  <td>77-84-ABC</td>
+                  <td>Walking</td>
+                  <td>Tracey Morgan</td>
+                  <td>5/25/2020</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                  <td class="xpand">Test</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- !not implemented yet -->
+          <!-- my guys' -->
+          <div class="myguys table-container" id="myguys">
+            <div class="guys option">
+              <div class="guys button"></div>
+              <div class="guys table switch"></div>
+            </div>
+            <div class="guys option">
+              <div class="guys button"></div>
+              <div class="guys table switch"></div>
+            </div>
+            <div class="guys option">
+              <div class="guys button"></div>
+              <div class="guys table switch"></div>
+            </div>
+            <div class="guys option">
+              <div class="guys button"></div>
+              <div class="guys table switch"></div>
+            </div>
+            <div class="guys option">
+              <div class="guys button"></div>
+              <div class="guys table switch"></div>
+            </div>
+            <div class="guys option">
+              <div class="guys button"></div>
+              <div class="guys table switch"></div>
+            </div>
+            <div class="guys option">
+              <div class="guys button"></div>
+              <div class="guys table switch"></div>
+            </div>
+            <div class="guys option">
+              <div class="guys button"></div>
+              <div class="guys table switch"></div>
+            </div>
+          </div>
+        </div>
+        <!-- past table -->
+        <div class="past table" id="past">
+          <table class="real" id="tblPast">
+            <thead>
+              <h2>Past</h2>
+              <tr>
+                <th>Loop</th>
+                <th>Status</th>
+                <th>From</th>
+                <th>Date</th>
+                <th class="xpand">Test</th>
+                <th class="xpand">Test</th>
+                <th class="xpand">Test</th>
+                <th class="xpand">Test</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>48-JKL-MNO</td>
+                <td>Walking</td>
+                <td>Micah Bowman</td>
+                <td>5/14/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+
+              <tr>
+                <td>48-84-ABC</td>
+                <td>Prelooped</td>
+                <td>Tom Brady</td>
+                <td>5/24/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+
+              <tr>
+                <td>78-REX-DEX</td>
+                <td>Working</td>
+                <td>Taylor Braddock</td>
+                <td>5/22/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+
+              <tr>
+                <td>48-77-aab</td>
+                <td>Prelooped</td>
+                <td>Sean Kincaid</td>
+                <td>5/25/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+
+              <tr>
+                <td>77-77-aab</td>
+                <td>SOLD</td>
+                <td>Bobby Fischer</td>
+                <td>5/23/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+
+              <tr>
+                <td>77-84-ABC</td>
+                <td>Walking</td>
+                <td>Tony Lake</td>
+                <td>5/25/2020</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+                <td class="xpand">Test</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- !filters -->
+      <div class="filters hidden bg2" id="filterone">
+        <div class="filtergrid">
+          <div class="li">
+            <div class="btncontainer">
+              <button id="user" class="filter-arg bg2">
+                user
+              </button>
+            </div>
+            <div class="btncontainer">
+              <button id="date" class="filter-arg bg2">
+                date
+              </button>
+            </div>
+            <div class="btncontainer">
+              <button id="loop" class="filter-arg bg2">
+                loop
+              </button>
+            </div>
+            <div class="btncontainer hidden">
+              <!-- todo: make this only appear on the log section -->
+              <button id="comment" class="filter-arg bg2">
+                comment
+              </button>
+            </div>
+          </div>
+
+          <div class="li">
+            <div class="btncontainer">
+              <button id="test" class="filter-arg bg2">
+                test pack
+              </button>
+            </div>
+            <div class="btncontainer">
+              <button id="system" class="filter-arg bg2">
+                system
+              </button>
+            </div>
+            <div class="btncontainer">
+              <button id="status" class="filter-arg bg2">
+                status
+              </button>
+            </div>
+            <div class="btncontainer">
+              <button id="ioloc" class="filter-arg bg2">
+                IO Location
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- !filters -->
+      <div class="filters">
+        <!-- todo: do id: whichever is active currently -->
+        <button id="filteronetoggle" class="filter-btn bg2">
+          Filters
+        </button>
+      </div>
+
+      <!-- spacer
+    <div class="spacer">
+
+    </div> -->
+
+      <!-- buttons to switch view -->
+      <div class="buttons">
+        <div class="pending">
+          <button class="bg2 pending-btn default-active-btn" id="pending-btn">
+            Pending
+          </button>
+        </div>
+        <div class="current">
+          <button class="bg2 current-btn" id="current-btn">Current</button>
+        </div>
+        <div class="past">
+          <button class="bg2 past-btn" id="past-btn">Past</button>
+        </div>
+      </div>
+
+      <!-- !Log -->
+      <div class="log">
+        <button class="bg2 log-btn">LOG</button>
+      </div>
+
+      <!-- !search -->
+      <div class="search">
+        <input type="text" class="text" />
+        <button class="search">Search</button>
+      </div>
+
+      <!-- !filters -->
+      <div class="filters hidden bg2" id="filtertwo">
+        <div class="filtergrid">
+          <div class="li">
+            <div class="btncontainer">
+              <button class="filter-arg bg2">
+                user
+              </button>
+            </div>
+            <div class="btncontainer">
+              <button class="filter-arg bg2">
+                date
+              </button>
+            </div>
+            <div class="btncontainer">
+              <button class="filter-arg bg2">
+                loop
+              </button>
+            </div>
+          </div>
+          <div class="li">
+            <div class="btncontainer">
+              <button class="filter-arg bg2">
+                test pack
+              </button>
+            </div>
+            <div class="btncontainer">
+              <button class="filter-arg bg2">
+                system
+              </button>
+            </div>
+            <div class="btncontainer">
+              <button class="filter-arg bg2">
+                status
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- !filters -->
+      <div class="filters">
+        <!-- todo: do id search -->
+        <button id="filtertwotoggle" class="filter-btn bg2">
+          Filters
+        </button>
+      </div>
+    </div>
+
+    <!-- 4 tiles  >>> -->
+    <div class="four-tiles">
+      <!-- !back to top -->
+      <div class="back-top">
+        <button class="bg2">Back to Top</button>
+      </div>
+
+      <!-- !Forms -->
+      <div class="forms">
+        <button class="bg2">Forms</button>
+      </div>
+
+      <!-- !Help -->
+      <div class="help">
+        <button class="bg2">Help</button>
+      </div>
+
+      <!-- !Notes -->
+      <div class="notes">
+        <button id="notes" class="bg2">Notes</button>
+      </div>
+      <div style="z-index: 2; width: 100vw; height: 85vh;" id="zzz" class="zzz">
+        <button class="bg2"></button>
+      </div>
+    </div>
+
+    <!-- admin only access >>  -->
+
+    <div class="admin">
+      <!-- !Reports -->
+      <div class="reports">
+        <button class="bg2">Reports</button>
+      </div>
+
+      <!-- !Users -->
+      <div class="users">
+        <button class="bg2">Users</button>
+      </div>
+    </div>
+
+    <script src="/js/cashboard.js"></script>
+    <script src="/js/filters.js"></script>
+    <script src="/js/ui/notes.js"></script>
+    <!-- <script src="/js/navigator.js"></script> -->
+  </body>
+</html>

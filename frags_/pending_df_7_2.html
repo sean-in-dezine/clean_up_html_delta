@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pending</title>
+</head>
+<style>
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 95vw;
+        height: 20vh;
+        grid-gap: 1vw;
+    }
+
+
+
+    button {
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    /* elements */
+    /* .classes */
+    /* #id's */
+
+    div {
+        background-color: blue;
+    }
+</style>
+
+
+
+<body>
+    <div class="container">
+        <div class="loop_div" id="loop_div">
+            <button class="loop" id="loop">Loop</button>
+        </div>
+        <div class="status">
+            <button class="status" id="status">Status</button>
+        </div>
+        <div class="from">
+            <button class="from" id="from">From</button>
+        </div>
+        <div class="date">
+            <button class="date" id="date">Date</button>
+        </div>
+    </div>
+
+
+    <!-- div, input, button, label (for=the name of something else) form,  -->
+    <!-- <input type="text" name="input"> -->
+    <!-- <label for="input"></label> -->
+
+    <!-- 1 row
+columns: 4
+loop status from date
+they each need to have specific id () and a specific class, these can be the same (ie .class and #class because, in programming, they're 2 different things.)
+
+
+
+8 columns
+
+<button>Loop</button>
+<button>status</button>
+<button>Loop</button>
+<button>Loop</button>
+
+-->
+    <script>
+        let card = document.querySelector('.card')
+        let system = document.querySelector('.system')
+        let owner = document.querySelector('.owner')
+        let testpack = document.querySelector('.testpack')
+        let loopid = document.querySelector('.loopid')
+        let actions = document.querySelector('.actions')
+        let status = document.querySelector('.status')
+        let lifecycle = document.querySelector('.lifecycle')
+        let log = document.querySelector('log')
+
+    </script>
+</body>
+
+</html>

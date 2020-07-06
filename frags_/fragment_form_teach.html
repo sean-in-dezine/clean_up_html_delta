@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            grid-gap: 1em;
+            grid-column: 1/3;
+            /* em is a unit of mesurment like pixels */
+            /* vh height of view port */
+            /* vw width of viewport */
+        }
+
+        .master_container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        input {
+            width: 100%
+        }
+
+        .container>div {
+            width: 100%;
+        }
+
+        .container>span {
+            grid-column: 1/3;
+        }
+
+        .container>.input {
+            width: 100%;
+        }
+
+        .submit {
+            width: 100%;
+            grid-column: 2/3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="master_container">
+
+        <div class="container" id="options">
+            <span>What would you like to do</span>
+            <input type="text">
+            <button class="submit">drop down arguments</button>
+
+            <div class="container" id="notes">
+                <span>Add note</span>
+
+                <input type="text">
+                <button class="submit">bitchniggas</button>
+            </div>
+
+            <div class="container" id="tags">
+                <input type="text id=" tagsid">
+                <button class="getTags">get da tagz</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        let container = document.querySelector('.container')
+        let submit = document.querySelector('.submit')
+        let getTags = document.querySelector('.getTags')
+
+
+
+        let tags = document.getElementById('tags')
+        let notes = document.getElementById('notes')
+        let options = document.getElementById('options')
+        let tagsid = document.getElementById('tagsid')
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

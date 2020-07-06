@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- *remove above -->
+
+    <!-- *keep below -->
+    <style>
+        /* element has nothing */
+        div {
+            font-family: roboto;
+            font-weight: 900;
+            user-select: none;
+        }
+
+        /* class has dot */
+        .button {
+            /* background: url('normal background not opaque like below') */
+            width: 9vw;
+            height: 14vh;
+            background-color: blue;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+
+
+        }
+
+        button {
+            /* background: url('to an opaque, darker version of the bg image') */
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            height: 12vh;
+            width: 8vw;
+            padding-top: 1vh;
+            margin-top: 1vh;
+            background-color: purple;
+            color: white;
+            font-family: roboto;
+            font-weight: 900;
+            user-select: none;
+
+        }
+
+        .table_pending {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+/* #=id */
+        #whatever {
+            display: none;
+        }
+    </style>
+    <!-- *keep above -->
+
+
+    <!-- *remove below -->
+</head>
+
+<body>
+    <!--*remove above  -->
+
+    <div class="cashboard_tables">
+        <div class="table_pending" id="pending_rowholder">
+            <!-- media query for desktop version -->
+            <!--!row begin -->
+            <div class="button">
+                <button id="loopid_pending">L##p</button>
+            </div>
+            <div class="button">
+                <button id="status_pending">st@tus</button>
+            </div>
+            <div class="button">
+                <button id="fromUser_pending">from</button>
+            </div>
+            <div class="button">
+                <button id="timelapsed_pending">l@pse</button>
+            </div>
+            <!-- !row end -->
+
+        </div>
+    </div>
+
+    <script>
+        let row = document.createElement('div')
+        row.class = 'table_pending'
+
+
+
+    </script>
+
+
+
+    <!-- *remove below -->
+
+</body>
+
+</html>

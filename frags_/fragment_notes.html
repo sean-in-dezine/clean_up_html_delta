@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- *remove above -->
+
+    <!-- *keep below -->
+    <style>
+        div {
+            font-family: roboto;
+            font-weight: 900;
+            user-select: none;
+        }
+
+        .button {
+            /* background: url('normal background not opaque like below') */
+            width: 100%;
+            height: 14vh;
+            background-color: blue;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+
+
+        }
+
+        button {
+            /* background: url('to an opaque, darker version of the bg image') */
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            height: 12vh;
+            width: 8vw;
+            padding-top: 1vh;
+            margin-top: 1vh;
+            background-color: purple;
+            color: white;
+            font-family: roboto;
+            font-weight: 900;
+            user-select: none;
+
+        }
+
+        .input {
+            display: grid;
+            grid-template-columns: 1fr;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .popup {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .notes {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+
+        .clear {
+            grid-column: 1/5;
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+    <!-- *keep above -->
+
+
+    <!-- *remove below -->
+</head>
+
+<body>
+    <!--*remove above  -->
+
+    <div class="popup" id="popup_notes">
+        <div class="notes">
+            <div class="clear"><button>Close</button></div>
+            <div id="remove" class="button"><button>button</button></div>
+            <div class="input"><input id="tags_input" type="text" placeholder="tags">
+            </div>
+            <div id="add_added" class="button"><button>button</button></div>
+        </div>
+    </div>
+
+    <script>
+        function removeTag() {
+
+        }
+
+        function addTag() {
+
+        }
+
+        function tagAdded() {
+
+        }
+
+
+        window.onload = function () {
+
+            let log = console.log
+            let remove = document.getElementById('remove')
+            let add_added = document.getElementById('add_added')
+            let inputs = document.querySelectorAll('.input')
+            let tag_row = document.getElementById('tags_input')
+
+            add_added.addEventListener('click', getInputs)
+
+            function getInputs() {
+                for (let input in inputs) {
+
+                    log(inputs)
+                    log(input)
+                    input = inputs[input]
+                    log(input)
+                    log(input.value)
+                }
+            }
+        }
+    </script>
+
+
+
+    <!-- *remove below -->
+
+</body>
+
+</html>
