@@ -38,6 +38,11 @@ div {
 }
 
 .login_sub_cntr:not(:hover) {
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+
     background-color: black;
     padding: 2em;
     margin: -2em;
@@ -46,11 +51,21 @@ div {
 }
 
 .login_sub_cntr>button:not(:hover) {
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+
     background-color: black;
     color: white;
 }
 
 .login_sub_cntr>button:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
 
     color: white;
 
@@ -116,6 +131,11 @@ button.login_height_adjustments {
 }
 
 .email_in_cntr:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     background-color: yellow;
     color: black;
     font-weight: 900
@@ -190,6 +210,11 @@ button.login_height_adjustments {
 }
 
 .tabulated:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     font-size: 36px;
     background-color: #f5ffff;
     margin-left: -0.43em;
@@ -198,11 +223,21 @@ button.login_height_adjustments {
 }
 
 .tabulated:not(:hover) {
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+
     background-color: white;
     border: none;
 }
 
 h1:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     background-color: red;
     color: white;
     padding: 1em;
@@ -212,6 +247,11 @@ h1:hover {
 }
 
 button:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     z-index: 5;
     padding: 1em;
     border: none;
@@ -235,6 +275,11 @@ button:hover {
 }
 
 .email_in_cntr:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     background-color: yellow;
     color: black;
     font-weight: 900
@@ -293,6 +338,11 @@ button:hover {
 #register_from_login_id {}
 
 .register_sub_cntr:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     background-color: turquoise;
     background: url('./img/obviously_fake_galaxy_cgi_rendering_for_make_believe.jpg');
     background-size: cover;
@@ -350,6 +400,11 @@ button:hover {
 }
 
 .blocks:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     background-color: yellow;
     padding: 1em;
     margin: -1em;
@@ -362,6 +417,11 @@ button:hover {
 }
 
 .blocks1:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     background: url('./img/obviously_fake_galaxy_cgi_rendering_for_make_believe.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -374,6 +434,11 @@ button:hover {
 }
 
 .blocks5:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     background-color: blue;
     opacity: 0.9;
     color: white;
@@ -415,6 +480,11 @@ button:hover {
 }
 
 .request:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     color: red;
     background-color: yellow;
 }
@@ -464,6 +534,10 @@ div.users>div.input>button.not_so_wide {
 
 .submit_users:hover {
 
+    transition: 0.2s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1.1s;
+
     color: white;
     background-color: black;
     font-weight: 900;
@@ -491,6 +565,11 @@ div.users>div.input>button.not_so_wide {
 }
 
 .primero:not(:hover) {
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+
     z-index: 4;
     background-color: #ff2ff2;
     padding-top: 1em;
@@ -500,6 +579,11 @@ div.users>div.input>button.not_so_wide {
 }
 
 .tabulated:hover {
+
+
+    transition: 0.1s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
     font-size: 36px;
     background-color: #f5ffff;
     margin-left: -0.43em;
@@ -508,11 +592,21 @@ div.users>div.input>button.not_so_wide {
 }
 
 .tabulated:not(:hover) {
+
+    transition: 0.1s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 0.4s;
+
     background-color: white;
     border: none;
 }
 
 h1:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     background-color: red;
     color: white;
     padding: 1em;
@@ -522,6 +616,11 @@ h1:hover {
 }
 
 button:hover {
+
+
+    transition: 0.4s background-color padding width height font-size;
+    transition-timing-function: linear;
+    transition-delay: 1s;
     z-index: 5;
     padding: 1em;
     border: none;

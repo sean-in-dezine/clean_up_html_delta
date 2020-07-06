@@ -94,8 +94,11 @@ submit_id_name.addEventListener('click', loginAttempt)
 
 
 function loginAttempt(ev) {
+
     ev.preventDefault()
-    console.log('test')
+    submitId_Name()
+
+
 }
 
 
@@ -106,7 +109,10 @@ register_from_login_id.addEventListener('click', registerFromLogin)
 
 function registerFromLogin(ev) {
     ev.preventDefault()
-    console.log('test')
+
+    otherwiseRegister()
+
+
 }
 
 // !event listeners end
