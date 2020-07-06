@@ -1,0 +1,23 @@
+{
+  "name": "clean_up_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-in-dezine/clean_up_html_delta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sean-in-dezine/clean_up_html_delta/issues"
+  },
+  "homepage": "https://github.com/sean-in-dezine/clean_up_html_delta#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
