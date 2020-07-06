@@ -97,6 +97,7 @@ button.login_height_adjustments {
     align-items: center;
     justify-content: center;
 }
+
 .email_in_cntr {
 
     display: initial;
@@ -173,6 +174,7 @@ button.login_height_adjustments {
     font-size: 14px;
     display: grid;
 }
+
 .tabular {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr;
@@ -214,6 +216,7 @@ button:hover {
     padding: 1em;
     border: none;
 }
+
 .email_in_cntr {
 
     display: initial;
@@ -242,6 +245,7 @@ button:hover {
     background-color: blue;
     color: white;
 }
+
 .password_in_cntr {
     display: initial;
 }
@@ -261,6 +265,7 @@ button:hover {
 #submit_id_name {
     height: 20vh;
 }
+
 .register_sub_cntr {
     background-color: blue;
 }
@@ -485,7 +490,14 @@ div.users>div.input>button.not_so_wide {
 
 }
 
+.primero:not(:hover) {
+    z-index: 4;
+    background-color: #ff2ff2;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
 
+}
 
 .tabulated:hover {
     font-size: 36px;
