@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strange times</title>
+    <style>
+        .click {
+            background-color: blue;
+        }
+
+        #id_name {
+            background-color: white;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+</head>
+
+<body>
+
+
+
+
+    <button class="click" id="id_name">click</button>
+
+
+
+
+
+
+
+
+    <script>
+
+    </script>
+</body>
+//*relevancy: [@button, (4)submitting, (y)name] //_class
+let click = document.querySelector('.click')
+//*relevancy: [@button, (4)submitting, (y)name] //_id
+let id_name = document.getElementById('id_name')
+
+id_name.addEventListener('click', clickEvent)
+function clickEvent(ev){
+ev.preventDefault()
+}
+
+</html>

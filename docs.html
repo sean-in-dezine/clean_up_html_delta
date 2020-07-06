@@ -1,0 +1,254 @@
+<!-- !email -->
+<script>
+    let email_in_cntr = document.querySelector('.email_in_cntr')
+</script>
+<style>
+    .email_in_cntr {
+        display: initial;
+    }
+</style>
+<input id='email_id' name='email' required='true' placeholder='your@email.domain' type="text" class="email_in_cntr">
+<label for='email'>enter email</label>
+
+
+
+
+
+<!-- !password -->
+<style>
+
+</style>
+<script>
+    let style = {
+        display: `.password_in_cntr {display: none;}
+#password{}`
+    }
+    let password_in_cntr = document.querySelector('.password_in_cntr')
+    let password = document.getElementById('password')
+</script>
+<input class="password_in_cntr" id='password' type='password' name='password' required='true' placeholder='password'>
+<label for='passowrd'>password</label>
+
+
+
+<!-- !submit that shit above -->
+<style>
+    #submit_id_name {
+        height: 2000px;
+    }
+</style>
+<script>
+    // !js
+    let submit_id_name_bt_cntr = document.querySelector('.submit_id_name_bt_cntr')
+    let login_height_adjustments = document.querySelector('.login_height_adjustments')
+    let submit_id_name = document.getElementById('submit_id_name')
+
+    submit_id_name.addEventListener('click', loginAttempt)
+
+    function loginAttempt(ev) {
+        ev.preventDefault()
+    }
+</script>
+<button id="submit_id_name" class="submit_id_name_bt_cntr login_height_adjustments">submit id_name</button>
+<!-- !button ends -->
+
+
+
+
+<!-- !below updated 106am 7/6/2020 -->
+
+<!-- !email -->
+<style>
+    .email_in_cntr {
+
+        display: initial;
+    }
+
+    .email_in_cntr:active {
+
+        background-color: blue;
+    }
+
+    .email_in_cntr:focus {
+
+        background-color: red;
+        opacity: 0.4;
+        color: white;
+    }
+
+    .email_in_cntr:hover {
+        background-color: yellow;
+        color: black;
+        font-weight: 900
+    }
+
+    .email_in_cntr::selection {
+
+        background-color: blue;
+        color: white;
+    }
+</style>
+<script>
+    let email_in_cntr = document.querySelector('.email_in_cntr')
+    let email = email_in_cntr
+    email.name = 'email'
+    email.required = 'true'
+    email.placeholder = 'your@email.domain'
+    let label_email = document.createElement('label')
+    label_email.for = 'email'
+    email.parentNode.append('label_email')
+    let = document.querySelector('.email_in_cntr')
+    let = document.getElementById('email_id')
+</script>
+
+
+<!-- !password -->
+<!--*relevancy: [@password, (4)auth, (y)verify] //_class-->
+<style>
+    .password_in_cntr {
+        display: initial;
+    }
+
+    #password {
+        display: initial;
+    }
+</style>
+<script>
+    let password_in_cntr = document.querySelector('.password_in_cntr')
+    let password = document.getElementById('password')
+    password.name = 'password'
+    password.required = 'true'
+    password.placeholder = 'password'
+    let label_password = document.createElement('label')
+    label_password.for = 'password'
+    password.parentNode.append('label_password')
+</script>
+
+
+<!-- !submit password and username to auth -->
+<style>
+    .submit_id_name_bt_cntr {
+        height: auto;
+    }
+
+    .login_height_adjustments {
+        height: auto;
+    }
+
+    #submit_id_name {
+        height: 20vh;
+    }
+</style>
+<script>
+    let submit_id_name_bt_cntr = document.querySelector('.submit_id_name_bt_cntr')
+    let login_height_adjustments = document.querySelector('.login_height_adjustments')
+    let submit_id_name = document.getElementById('submit_id_name')
+    submit_id_name.addEventListener('click', loginAttempt)
+
+    function loginAttempt(ev) {
+        ev.preventDefault()
+    }
+</script>
+
+<!-- !end update -->
+
+
+
+<!-- !update to js password -->
+
+<script>
+    let password_in_cntr = document.querySelector('.password_in_cntr')
+    let password = document.getElementById('password')
+    password.name = 'password'
+    password.required = 'true'
+    password.placeholder = 'password'
+    let label_password = document.createElement('label')
+    label_password.htmlFor = 'password'
+    label_password.id = 'label_password_id'
+    password.parentNode.append(label_password)
+</script>
+
+<!-- !end update -->
+
+
+
+
+<!-- !new update 147 am -->
+<!-- *register... but from login (button) -->
+
+<style>
+    .register_sub_cntr {
+        background-color: blue;
+    }
+
+    .register_sub_cntr:not(:focus) {
+        background-color: red;
+    }
+
+    .register_from_login {
+        height: 20vh;
+    }
+
+    .convincing_argument {
+        font-size: 8px;
+        font-weight: 900;
+        height: 100%;
+    }
+
+    #register_from_login_id {}
+
+    .register_sub_cntr:hover {
+        background-color: turquoise;
+        padding: 20vh;
+    }
+
+    .register_button_dv_cntr {
+        background-color: turquoise;
+    }
+
+    .or_register {}
+</style>
+<script>
+    //*relevancy: [@register, (4)signup, (y)use] //_class
+    let register_sub_cntr = document.querySelector('.register_sub_cntr')
+    let display_register_dv_cntr = document.querySelector('.display_register_dv_cntr')
+    let or_register = document.querySelector('.or_register')
+    let register_from_login = document.querySelector('.register_from_login')
+    let register_from_login_id = document.getElementById('register_from_login_id')
+    let convincing_argument = document.querySelector('convincing_argument')
+    register_from_login_id.addEventListener('click', registerFromLogin)
+
+    function registerFromLogin(ev) {
+        ev.preventDefault()
+    }
+</script>
+<button class="register_from_login">
+    <div class="or_register">
+        <span class="convincing_argument">Otherwise, register</span>
+    </div>
+</button>
+
+<!-- !end update 147 am -->
+
+
+    <!-- ?new column -->
+    <!-- !new column -->
+    <!-- *new column -->
+
+
+    <!-- !register button middle column-->
+    <style>
+        .register_sub_cntr {}
+
+        #sub_register_id {}
+    </style>
+    <script>
+        //*relevancy: [@targeting, (4)parent, (y)grid] //_class
+        let register_sub_cntr = document.querySelector('.register_sub_cntr')
+        let sub_register_id = document.getElementById('sub_register_id')
+    </script>
+    
+    <div class="register_sub_cntr" id="sub_register_id">
+
+
+        

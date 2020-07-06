@@ -1,0 +1,887 @@
+<!-- !it's all going on one page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>one_file</title>
+    <style>
+        div {
+            /* width: 100%; */
+            font-size: 30px;
+        }
+
+        .display_register_dv_cntr {
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            /* width: 100%; */
+        }
+
+
+        .container_main {
+            display: grid;
+            grid-template-columns: 2fr 3fr 2fr;
+            grid-gap: 20vh;
+        }
+
+        .login_sub_cntr {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            /* grid-template-columns: 1fr; */
+            height: 100vh;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login_sub_cntr:not(:hover) {
+            background-color: black;
+            padding: 2em;
+            margin: -2em;
+            color: white;
+
+        }
+
+        .login_sub_cntr>button:not(:hover) {
+            background-color: black;
+            color: white;
+        }
+
+        .login_sub_cntr>button:hover {
+
+            color: white;
+
+            background: url('./img/obviously_fake_galaxy_cgi_rendering_for_make_believe.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 2em;
+            margin: -2em;
+
+        }
+
+        input {
+            color: black;
+        }
+
+        .click {
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button.login_height_adjustments {
+            height: 10vh;
+
+        }
+
+        #id_name {
+            color: white;
+            background-color: grey;
+            opacity: 10;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+
+        /* !temp */
+    </style>
+</head>
+
+<body>
+
+    <!--*main, mothafucka _class-->
+    <!-- let container_main = document.querySelector('.container_main')
+     -->
+    <div class="container_main">
+        <!--!everything goes in here -->
+
+
+
+        <!--*login begins _class-->
+        <!-- let login_sub_cntr = document.querySelector('.login_sub_cntr')
+         /*    */ -->
+        <div class="login_sub_cntr">
+            <!-- *sub elements below -->
+            <!-- !login begins -->
+            <!-- * -->
+
+
+
+
+            <!-- !email begins -->
+            <style>
+                .email_in_cntr {
+
+                    display: initial;
+                }
+
+                .email_in_cntr:active {
+
+                    background-color: blue;
+                }
+
+                .email_in_cntr:focus {
+
+                    background-color: red;
+                    opacity: 0.4;
+                    color: white;
+                }
+
+                .email_in_cntr:hover {
+                    background-color: yellow;
+                    color: black;
+                    font-weight: 900
+                }
+
+                .email_in_cntr::selection {
+
+                    background-color: blue;
+                    color: white;
+                }
+            </style>
+            <input id='email_id' name='email' required='true' placeholder='your@email.domain' type="text"
+                class="email_in_cntr">
+            <label for='email'>enter email</label>
+            <!-- !email ends -->
+
+
+
+
+            <!-- !password begins -->
+            <input class="password_in_cntr" id='password' type='password' name='password' required='true'
+                placeholder='password'>
+            <label for='passowrd'>password</label>
+            <!-- !password ends -->
+
+
+
+
+            <!-- !button begins -->
+            <style>
+                .submit_id_name_bt_cntr {
+                    height: auto;
+                }
+
+                .login_height_adjustments {
+                    height: auto;
+                }
+
+                #submit_id_name {
+                    height: 20vh;
+                }
+            </style>
+            <button id="submit_id_name" class="submit_id_name_bt_cntr login_height_adjustments">submit id_name</button>
+            <!-- !button ends -->
+
+
+
+            <button class="register_from_login">
+                <div class="or_register">
+                    <span class="convincing_argument">Otherwise, register</span>
+                </div>
+            </button>
+
+
+
+            <!-- *  -->
+            <!-- !login ends -->
+            <!-- *sub elements above -->
+        </div>
+
+        <!-- ?new column -->
+        <!-- !new column -->
+        <!-- *new column -->
+
+
+
+
+
+
+        <!-- !register begins -->
+
+        <div class="register_sub_cntr" id="sub_register_id">
+
+            <!-- !display begins -->
+
+            <style media="screen">
+                .display_register_dv_cntr {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                    vertical-align: center;
+                    justify-items: center;
+                    justify-self: center;
+                    align-self: center;
+                    align-items: center;
+                    justify-content: center;
+                    /* width: 100%; */
+                }
+            </style>
+            <div class="display_register_dv_cntr">
+
+                <!-- !create user -->
+                <div class="blocks5 blocks">
+                    <input class="email_in_cntr register_email" id='username' type='email' name='username'
+                        required='true' placeholder='username'>
+                    <label for='username'></label>
+
+                    <input class="register_password" id='register_password' type='password' name='register_password'
+                        required='true' placeholder='password'>
+                    <label for='register_password'></label>
+
+                    <button class="submit_registration blocks5 blocks1" id="submit_registration_id">submit</button>
+                </div>
+                <!-- !create user -->
+
+                <!-- !submit create user -->
+                <button class="create_login blocks1 blocks create" id="create_login">
+                    <div class="blocks blocks1">create login</div>
+                </button>
+                <!-- !/submit create user -->
+
+
+                <!-- !forgot id -->
+                <button class="blocks1 blocks forgot" id="forgot_id">
+                    <div class="blocks blocks1">forgot login</div>
+                </button>
+                <!-- !/forgot id -->
+
+                <!-- !request id -->
+                <button class="blocks blocks1 request" id="request_login">
+                    <div class="blocks5">
+                        request login
+                    </div>
+                </button>
+                <!-- !/request id -->
+                <!-- ? for the various elements ? -->
+                <!-- ! -->
+                <script>
+                    let create_login = document.querySelector('create_login')
+                    let create_login_other = document.querySelector('create')
+                    let create__id = document.getElementById('create_login')
+                    let blocks1 = document.querySelector('blocks1')
+                    let forgot = document.querySelector('forgot')
+                    let request = document.querySelector('request')
+                    let request_login_button = document.getElementById('request_login')
+                    let forgot_id = document.getElementById('forgot_id')
+                </script>
+
+                <!-- ! -->
+
+
+            </div>
+
+
+
+            <!-- !display ends -->
+
+
+
+
+            <!-- ?friendly register div below -->
+        </div>
+        <!-- !register ends -->
+
+
+
+
+        <!-- ?new column -->
+        <!-- !new column -->
+        <!-- *new column -->
+
+        <!-- !third column begins -->
+        <style>
+            .users {
+                display: grid;
+                grid-template-columns: 1fr;
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+                padding-right: 5em;
+                margin-right: 5em;
+                margin-left: -3em;
+                padding-left: -2em;
+
+            }
+
+
+            .input>label {
+                font-size: 14px;
+                display: grid;
+            }
+        </style>
+
+        <!-- !tabular -->
+
+        <style>
+            .tabular {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr 2fr;
+                grid-gap: 1em;
+                margin-left: -2em;
+                padding-left: -1em;
+
+            }
+
+            .tabulated {
+                font-size: 26px;
+
+            }
+
+            .tabulated:hover {
+                font-size: 36px;
+                background-color: #f5ffff;
+                margin-left: -0.43em;
+                margin-right: -0.76em;
+                z-index: 2;
+            }
+
+            .tabulated:not(:hover) {
+                background-color: white;
+                border: none;
+            }
+
+            h1:hover {
+                background-color: red;
+                color: white;
+                padding: 1em;
+                margin-left: -3em;
+                margin-right: -3em;
+                z-index: 4;
+            }
+
+            button:hover {
+                z-index: 5;
+                padding: 1em;
+                border: none;
+            }
+        </style>
+        <script>
+            let tabulated = document.querySelector('.tabulated')
+            let tabular = document.querySelector('.tabular')
+            let row = document.querySelector('.row')
+        </script>
+        <!-- !/tabular -->
+        <div class="users">
+            <div class="tabular">
+                <button class="tabulated row">suuup</button>
+                <button class="tabulated row">suuup</button>
+                <button class="tabulated row">suuup</button>
+                <button class="tabulated row">suuup</button>
+            </div>
+            <h1>query selectors missing .'s everywhere</h1>
+            <div class="input">
+                <input id='user' type='text' name='user' required='true' placeholder='user'>
+                <label for='user'>type user's name</label>
+
+
+
+                <button id="submit_users_id" class="submit_users not_so_wide">submit</button>
+            </div>
+        </div>
+
+
+        <!-- !third column ends -->
+        <!-- !everything goes above here -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ?roadblock motha fucka this is donezo -->
+
+    <!-- !you are now entering javascript territory -->
+
+
+
+
+    <!-- !email -->
+    <style>
+        .email_in_cntr {
+
+            display: initial;
+        }
+
+        .email_in_cntr:active {
+
+            background-color: blue;
+        }
+
+        .email_in_cntr:focus {
+
+            background-color: red;
+            opacity: 0.4;
+            color: white;
+        }
+
+        .email_in_cntr:hover {
+            background-color: yellow;
+            color: black;
+            font-weight: 900
+        }
+
+        .email_in_cntr::selection {
+
+            background-color: blue;
+            color: white;
+        }
+    </style>
+    <script>
+        let email_in_cntr = document.querySelector('.email_in_cntr')
+        let email = email_in_cntr
+        email.name = 'email'
+        email.required = 'true'
+        email.placeholder = 'your@email.domain'
+        let label_email = document.createElement('label')
+        label_email.htmlFor = 'email'
+        label_email.id = 'label_email_id'
+        email.parentNode.append(label_email)
+        let = document.querySelector('.email_in_cntr')
+        let = document.getElementById('email_id')
+    </script>
+
+
+    <!-- !password -->
+    <!--*relevancy: [@password, (4)auth, (y)verify] //_class-->
+    <style>
+        .password_in_cntr {
+            display: initial;
+        }
+
+        #password {
+            display: initial;
+        }
+    </style>
+    <script>
+        let password_in_cntr = document.querySelector('.password_in_cntr')
+        let password = document.getElementById('password')
+        password.name = 'password'
+        password.required = 'true'
+        password.placeholder = 'password'
+        let label_password = document.createElement('label')
+        label_password.htmlFor = 'password'
+        label_password.id = 'label_password_id'
+        password.parentNode.append(label_password)
+    </script>
+
+
+    <!-- !submit password and username to auth -->
+    <style>
+        .submit_id_name_bt_cntr {
+            height: auto;
+        }
+
+        .login_height_adjustments {
+            height: auto;
+        }
+
+        #submit_id_name {
+            height: 20vh;
+        }
+    </style>
+    <script>
+        let submit_id_name_bt_cntr = document.querySelector('.submit_id_name_bt_cntr')
+        let login_height_adjustments = document.querySelector('.login_height_adjustments')
+        let submit_id_name = document.getElementById('submit_id_name')
+        submit_id_name.addEventListener('click', loginAttempt)
+
+        function loginAttempt(ev) {
+            ev.preventDefault()
+        }
+    </script>
+
+    <!-- !yes i want to register -->
+
+    <style>
+        .register_sub_cntr {
+            background-color: blue;
+        }
+
+        .register_sub_cntr:not(:focus) {
+            background-color: blue;
+            opacity: 0.8;
+        }
+
+        .register_from_login {
+            height: 20vh;
+        }
+
+        #submit_id_name {
+            font-size: 23px;
+        }
+
+        .convincing_argument {
+            font-size: 24px;
+            font-weight: 900;
+            height: 100%;
+        }
+
+
+        #register_from_login_id {}
+
+        .register_sub_cntr:hover {
+            background-color: turquoise;
+            background: url('./img/obviously_fake_galaxy_cgi_rendering_for_make_believe.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+
+            /* padding: 5em;
+            margin: -4em; */
+
+        }
+
+        .register_button_dv_cntr {
+            background-color: turquoise;
+        }
+
+        .or_register {}
+    </style>
+    <script>
+        //*relevancy: [@register, (4)signup, (y)use] //_class
+        let register_sub_cntr = document.querySelector('.register_sub_cntr')
+        let display_register_dv_cntr = document.querySelector('.display_register_dv_cntr')
+        let or_register = document.querySelector('.or_register')
+        let register_from_login = document.querySelector('.register_from_login')
+        let register_from_login_id = document.getElementById('register_from_login_id')
+        let convincing_argument = document.querySelector('convincing_argument')
+        register_from_login_id.addEventListener('click', registerFromLogin)
+
+        function registerFromLogin(ev) {
+            ev.preventDefault()
+        }
+    </script>
+
+
+
+
+    <!-- ?new column -->
+    <!-- !new column -->
+    <!-- *new column -->
+
+
+    <!-- !register button middle column-->
+    <style>
+        .register_sub_cntr {}
+
+        #sub_register_id {}
+    </style>
+    <script>
+        //*relevancy: [@targeting, (4)parent, (y)grid] //_class
+        let register_sub_cntr = document.querySelector('.register_sub_cntr')
+        let sub_register_id = document.getElementById('sub_register_id')
+    </script>
+
+
+
+
+    <!-- !display -->
+    <!-- *main display grid -->
+    <style>
+        #username {
+            font-size: 15px;
+        }
+
+        #username:focus {
+            font-size: 22px;
+        }
+
+        #register_password {
+            font-size: 18px;
+        }
+
+        #register_password:focus {
+            font-size: 10px;
+        }
+
+
+        .display_register_dv_cntr {
+            display: grid;
+            grid-template-columns: 6fr 1fr;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 5em;
+            padding: 2em;
+            margin: -1em;
+            padding-top: 7em;
+
+        }
+
+        .blocks {
+            background-color: blue;
+            padding: 2em;
+            margin: -2em;
+        }
+
+        .blocks:hover {
+            background-color: yellow;
+            padding: 1em;
+            margin: -1em;
+        }
+
+        .blocks5:not(:focus) {
+            background-color: black;
+            ;
+
+        }
+
+        .blocks1:hover {
+            background: url('./img/obviously_fake_galaxy_cgi_rendering_for_make_believe.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .blocks1 {
+            background-color: blue;
+            color: white;
+        }
+
+        .blocks5:hover {
+            background-color: blue;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .forgot:focus {
+            background-color: red;
+        }
+
+        .forgot::selection {
+
+            background-color: blue;
+            color: cyan;
+        }
+
+        .blocks5::selection {
+
+            background-color: blue;
+            color: cyan;
+        }
+
+        .blocks5:active {
+
+            background-color: blue;
+            color: cyan;
+        }
+
+        .forgot:active {
+
+            background-color: blue;
+            color: cyan;
+        }
+
+        .request {
+            background: url('./img/obviously_fake_galaxy_cgi_rendering_for_make_believe.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .request:hover {
+            color: red;
+            background-color: yellow;
+        }
+
+        .request:not(:focus) {
+            color: black;
+        }
+    </style>
+    <script>
+        let register_button_dv_cntr = document.querySelector('register_button_dv_cntr')
+        let blocksfive = document.querySelector('.blocks5')
+        let blocks = document.querySelector('.blocks')
+    </script>
+
+    <style>
+        .email_in_cntr {
+            width: 5vw;
+        }
+    </style>
+    <script>
+        let email_in_cntr = document.querySelector('.email_in_cntr')
+        let username = document.getElementById('username')
+    </script>
+    <script>
+        let blocks1 = document.querySelector('.blocks1')
+        let forgot = document.querySelector('.forgot')
+        let request = document.querySelector('.request')
+        let request_login_button = document.getElementById('.request_login')
+        let forgot_id = document.getElementById('forgot_id')
+    </script>
+
+
+
+    <!-- ?new column -->
+    <!-- !new column -->
+    <!-- *new column -->
+
+
+
+    <!-- !unlocks later -->
+    <!-- !users -->
+    <style>
+        .users {
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            padding-right: 5em;
+            margin-right: 5em;
+            margin-left: -3em;
+            padding-left: -2em;
+
+        }
+
+
+        .input>label {
+            font-size: 14px;
+            display: grid;
+        }
+
+        div.users>div.input>button.not_so_wide {
+            width: 10vw;
+        }
+
+        .yes_i_want_to_register_bt_cntr {
+            background-color: goldenrod;
+        }
+
+        .submit_users {
+            background-color: goldenrod;
+        }
+
+        .submit_users:hover {
+
+            color: white;
+            background-color: black;
+            font-weight: 900;
+            font-size: 15px;
+
+        }
+
+
+        .submit_users {
+            font-size: 26px;
+        }
+    </style>
+
+    <script>
+        let submit_users = document.querySelector('.submit_users')
+        let user_id = document.getElementById('user')
+        let not_so_wide = document.querySelector('.not_so_wide')
+        let input_class = document.querySelector('.input')
+        let submit_users_id = document.getElementById('submit_users_id')
+    </script>
+
+    <!-- !/users -->
+    <!-- !tabular -->
+    <style>
+        .tabular {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 2fr;
+            grid-gap: 1em;
+            margin-left: -2em;
+            padding-left: -1em;
+
+        }
+
+        .tabulated {
+            font-size: 26px;
+
+        }
+
+
+
+        .tabulated:hover {
+            font-size: 36px;
+            background-color: #f5ffff;
+            margin-left: -0.43em;
+            margin-right: -0.76em;
+            z-index: 2;
+        }
+
+        .tabulated:not(:hover) {
+            background-color: white;
+            border: none;
+        }
+
+        h1:hover {
+            background-color: red;
+            color: white;
+            padding: 1em;
+            margin-left: -3em;
+            margin-right: -3em;
+            z-index: 4;
+        }
+
+        button:hover {
+            z-index: 5;
+            padding: 1em;
+            border: none;
+        }
+    </style>
+
+    <script>
+        let tabulated = document.querySelector('.tabulated')
+        let tabular = document.querySelector('.tabular')
+        let row = document.querySelector('.row')
+    </script>
+    <!-- !/tabular -->
+
+
+
+</body>
+
+</html>

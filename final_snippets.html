@@ -1,0 +1,51 @@
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        display: block;
+        position: relative;
+    }
+
+    div::after {
+        content: "";
+        /* background: url(image.jpg); */
+        background: blue;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+</style>
+
+
+<script>
+    let email_in_cntr = document.querySelector('.email_in_cntr')
+</script>
+<style>
+    .email_in_cntr {
+      
+        display: initial;
+    }
+</style>
+<input id='email_id' name='email' required='true' placeholder='your@email.domain' type="text" class="email_in_cntr">
+<label for='email'>enter email</label>
+
+
+
+
+
+<!--*inputcls-->
+<!--  -->
+
+<input class="password_in_cntr" id='password' type='password' name='password' required='true' placeholder='password'>
+<label for='passowrd'>password</label>
+
+<style>
+    #password {display: initial;}
+
+    
+    .password_in_cntr{display: initial;}
+</style>
