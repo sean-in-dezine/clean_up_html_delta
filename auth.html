@@ -1,55 +1,172 @@
+<!-- !it's all going on one page -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>strange times</title>
-    <style>
-        .click {
-            background-color: blue;
-        }
+    <title>one_file</title>
+    <link rel="stylesheet" href="./auth.css">
 
-        #id_name {
-            background-color: white;
-            text-align: center;
-            vertical-align: center;
-            justify-items: center;
-            justify-self: center;
-            align-self: center;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-</head>
 </head>
 
 <body>
 
+    <!--*main, mothafucka _class-->
+    <div class="container_main">
+        <!--!everything goes in here -->
+        <!--*login begins _class-->
+
+        <div class="login_sub_cntr">
+            <!-- *sub elements below -->
+            <!-- !login begins -->
+            <!-- * -->
+
+
+            <!-- !email begins -->
+            
+            <input id='email_id' name='email' required='true' placeholder='your@email.domain' type="text"
+                class="email_in_cntr">
+            <label for='email'>enter email</label>
+            <!-- !email ends -->
 
 
 
-    <button class="click" id="id_name">click</button>
+
+            <!-- !password begins -->
+            <input class="password_in_cntr" id='password' type='password' name='password' required='true'
+                placeholder='password'>
+            <label for='passowrd'>password</label>
+            <!-- !password ends -->
+
+
+
+
+            <!-- !button begins -->
+
+            <button id="submit_id_name" class="submit_id_name_bt_cntr login_height_adjustments">submit id_name</button>
+            <!-- !button ends -->
+
+
+
+            <button class="register_from_login">
+                <div class="or_register">
+                    <span class="convincing_argument">Otherwise, register</span>
+                </div>
+            </button>
+
+
+
+            <!-- *  -->
+            <!-- !login ends -->
+            <!-- *sub elements above -->
+        </div>
+
+        <!-- ?new column -->
+        <!-- !new column -->
+        <!-- *new column -->
 
 
 
 
 
 
+        <!-- !register begins -->
+
+        <div class="register_sub_cntr" id="sub_register_id">
+
+            <!-- !display begins -->
+
+            <div class="display_register_dv_cntr">
+
+                <!-- !create user -->
+                <div class="blocks5 blocks">
+                    <input class="email_in_cntr register_email" id='username' type='email' name='username'
+                        required='true' placeholder='username'>
+                    <label for='username'></label>
+
+                    <input class="register_password" id='register_password' type='password' name='register_password'
+                        required='true' placeholder='password'>
+                    <label for='register_password'></label>
+
+                    <button class="submit_registration blocks5 blocks1" id="submit_registration_id">submit</button>
+                </div>
+                <!-- !create user -->
+
+                <!-- !submit create user -->
+                <button class="create_login blocks1 blocks create" id="create_login">
+                    <div class="blocks blocks1">create login</div>
+                </button>
+                <!-- !/submit create user -->
 
 
-    <script>
+                <!-- !forgot id -->
+                <button class="blocks1 blocks forgot" id="forgot_id">
+                    <div class="blocks blocks1">forgot login</div>
+                </button>
+                <!-- !/forgot id -->
 
-    </script>
+                <!-- !request id -->
+                <button class="blocks blocks1 request" id="request_login">
+                    <div class="blocks5">
+                        request login
+                    </div>
+                </button>
+                <!-- !/request id -->
+                <!-- ? for the various elements ? -->
+                <!-- ! -->
+      
+                <!-- ! -->
+
+
+            </div>
+
+
+
+            <!-- !display ends -->
+
+
+
+
+            <!-- ?friendly register div below -->
+        </div>
+        <!-- !register ends -->
+
+
+
+
+        <!-- ?new column -->
+        <!-- !new column -->
+        <!-- *new column -->
+
+        <!-- !third column begins -->
+
+
+        <div class="users">
+            <div class="tabular">
+                <button class="tabulated row">suuup</button>
+                <button class="tabulated row">suuup</button>
+                <button class="tabulated row">suuup</button>
+                <button class="tabulated row">suuup</button>
+            </div>
+            <h1>query selectors missing .'s everywhere</h1>
+            <div class="input">
+                <input id='user' type='text' name='user' required='true' placeholder='user'>
+                <label for='user'>type user's name</label>
+
+
+
+                <button id="submit_users_id" class="submit_users not_so_wide">submit</button>
+            </div>
+        </div>
+
+
+        <!-- !third column ends -->
+        <!-- !everything goes above here -->
+    </div>
+
+    <!-- <script src="./auth.js"></script> -->
 </body>
-//*relevancy: [@button, (4)submitting, (y)name] //_class
-let click = document.querySelector('.click')
-//*relevancy: [@button, (4)submitting, (y)name] //_id
-let id_name = document.getElementById('id_name')
-
-id_name.addEventListener('click', clickEvent)
-function clickEvent(ev){
-ev.preventDefault()
-}
 
 </html>
