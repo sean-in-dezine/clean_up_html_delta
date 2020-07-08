@@ -5,7 +5,7 @@ function submitId_Name() {
     console.log(data)
     let h = new Headers()
     h.append('content-type', 'application/json')
-    let url = window.location.href + ''
+    let url = window.location.href + 'login'
     let options = {
         method: 'POST',
         headers: h,
@@ -16,65 +16,27 @@ function submitId_Name() {
     //         .then(res => res.json())
     //         .then(data => console.log(data))
     //         .catch(err => console.error(err))
+
+
+    fetch(req)
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+
+
+
 }
 
 function otherwiseRegister() {
 
-
-
-
     let data = getValues('register')
 
-    // new Promise((resolve, reject) => {
-    //         // !   set time out
-
-    //         resolve()
-    //     }).then(() => {
-    //         console.log('hello')
-    //     }).then(() => {
-    //         throw new Error('oops')
-    //     }).catch(err => console.warn(err))
-    //     .then(() => {
-    //         console.log('do this other thing')
-    //     }).catch(err => console.error(err))
-
-
-    // new Promise((resolve, reject) => {
-    //         // !    add event listener
-
-    //         resolve()
-    //     }).then(() => {
-    //         console.log('hello')
-    //     }).then(() => {
-    //         throw new Error('oops')
-    //     }).catch(err => console.warn(err))
-    //     .then(() => {
-    //         console.log('do this other thing')
-    //     }).catch(err => console.error(err))
-
-    // let params = {}
-    // params = JSON.stringify({
-    //     params
-    // })
-    // let h = new Headers()
-    // h.append('content-type', 'application/json')
-    // let url = window.location.href + ''
-    // let options = {
-    //     method: 'POST',
-    //     headers: h,
-    //     body: params
-    // }
-    // let req = new Request(url, options)
-    // fetch(req)
-    //     .then(res => res.json())
-    //     .then(data => console.log(data))
-    //     .catch(err => console.error(err))
 }
-
 
 function POST_REGISTRATION(data) {
 
-    let url = '/'
+    let url = window.location.href + 'register'
+    // let url = '/register'
     let h = new Headers()
     h.append('content-type', 'application/json')
     let options = {
@@ -87,25 +49,12 @@ function POST_REGISTRATION(data) {
 
 
     return req
-
-
-
-
-    // new Promise((resolve, reject) => {
-
-    //     (fetch(req) !== undefined) {
-    //          fetch(req).then(res => res.text()).then(data => console.log(data, 'hi'))
-    //      }
-    // }).catch(err => console.log(err))
-
-
-
-
-
 }
 
 function RETURN_REGISTRATION(res) {
     let registration_data = res
 
-    console.log(registration_data)
+    //? console.log here %%log
+    console.log('public/js/fetch_auth.js > RETURN_REGISTRATION(res) > registration_data (/register)', registration_data)
+
 }

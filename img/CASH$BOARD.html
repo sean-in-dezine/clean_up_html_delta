@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASH$BOARD</title>
+</head>
+
+<body>
+
+
+    <!--*main, mothafucka-->
+    <!-- let container_main = document.querySelector('.container_main') 
+ /*   */ -->
+    <div class="container_main" id="maincontainer">
+
+        <style>
+            .container_main {
+                display: grid;
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .search_bt_cntr {
+                display: initial;
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+
+
+
+
+
+            }
+
+            .search_sub_cntr {
+                display: initial;
+            }
+
+            .search_in_cntr {
+                display: initial;
+            }
+        </style>
+
+        <div class="search_sub_cntr" id="searchContainer">
+
+            <label for="search">Search for loops, or users. You'll be directed to either a loop card or a log, and can
+                always access the log from the card. Press x to excape.</label>
+
+            <input type="text" class="search_in_cntr" id="search" name="search" required="true" placeholder="search">
+            <button class="search_bt_cntr" id="search_button_id">Search</button>
+
+        </div>
+
+
+
+
+
+        <style>
+            .admin_sub_cntr {
+                display: grid
+            }
+
+            .admin_bt_cntr {
+                display: initial;
+            }
+        </style>
+
+        <div class="admin_sub_cntr" id="admin_container">
+
+
+            <h1>admin</h1>
+
+
+
+
+            <input id="admin_username" placeholder="true"><input id="admin_password"><button id="admin_certain"></button><button class="admin_bt_cntr" id="admin_access_id">get admin access</button>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <script src="CASH$BOARD_files/search.js"></script>
+
+
+
+    <script>
+        let admin_sub_cntr = document.querySelector('.admin_sub_cntr')
+        let admin_bt_cntr = document.querySelector('.admin_bt_cntr')
+        let admin_access_id = document.getElementById('admin_access_id')
+        let admin_container = document.getElementById('admin_container')
+
+
+        function createAdminElements() {
+            console.log('hello')
+            const loginAdmin = () => {
+                console.log('heeeeeei')
+                let admin_username = document.createElement('input')
+                let admin_password = document.createElement('input')
+                let admin_certain = document.createElement('button')
+                admin_username
+                    .id = 'admin_username'
+                admin_password.id = 'admin_password'
+                admin_certain.id = 'admin_certain'
+
+                admin_container.insertBefore(admin_username, admin_access_id)
+                admin_container.insertBefore(admin_password, admin_access_id)
+                admin_container.insertBefore(admin_certain, admin_access_id)
+
+
+                admin_username = document.getElementById('admin_username')
+                admin_password = document.getElementById('admin_password')
+                admin_certain = document.getElementById('admin_certain')
+                admin_username
+                    .placeholder = 'username'
+                    .type = 'text'
+                    .required = true
+
+
+                let admin_login = {
+                    user: admin_username.value,
+                    pass: admin_password.value,
+                    pass: admin_certain.value
+                }
+
+                console.log(admin_login)
+
+                return admin_login
+            }
+            loginAdmin()
+
+            console.log('hi')
+
+
+
+
+        }
+
+        function holdYourHorsesThereAdmin() {
+
+
+        }
+
+
+
+        window.onload = admin_access_id.addEventListener('click', getAdminAxs)
+
+
+        function getAdminAxs(ev) {
+            ev.preventDefault()
+            createAdminElements()
+            console.log('axs reqstd')
+
+
+
+        }
+    </script>
+
+
+
+</body></html>

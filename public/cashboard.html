@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASH$BOARD</title>
+</head>
+
+<body>
+
+
+    <!--*main, mothafucka-->
+    <!-- let container_main = document.querySelector('.container_main') 
+ /*   */ -->
+    <div class="container_main" id="maincontainer">
+
+
+
+
+        <!-- !search -->
+
+        <style>
+            .container_main {
+                display: grid;
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .search_bt_cntr {
+                display: initial;
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+
+
+
+
+
+            }
+
+            .search_sub_cntr {
+                display: initial;
+            }
+
+            .search_in_cntr {
+                display: initial;
+            }
+        </style>
+
+        <div class="search_sub_cntr" id="searchContainer">
+
+            <label for='search'>Search for loops, or users. You'll be directed to either a loop card or a log, and can
+                always access the log from the card. Press x to excape.</label>
+
+            <input type="text" class="search_in_cntr" id="search" name='search' required='true' placeholder='search'>
+            <button class="search_bt_cntr" id="search_button_id">Search</button>
+
+        </div>
+
+        <!-- !/search -->
+
+
+
+        <!-- !admin -->
+        <style>
+            .admin_sub_cntr {
+                display: grid
+            }
+
+            .admin_bt_cntr {
+                display: initial;
+            }
+        </style>
+
+
+        <div class="admin_sub_cntr" id="admin_container">
+
+
+            <h1>admin</h1>
+
+
+
+            <h1>just use img#dice { display: none; } and stop fucking with it</h1>
+
+
+
+
+            <div class="display_admin_dv_cntr" id="display_admin">
+
+
+                <style>
+                    .admin_access_username_in_cntr {
+                        display: none;
+                    }
+
+                    .admin_access_password_in_cntr {
+                        display: none;
+                    }
+
+                    .display_admin_dv_cntr {
+                        display: none;
+                    }
+                </style>
+                <input type="text" class="admin_access_username_in_cntr" id="id_admin_ax_user">
+
+
+                <input type="password" class="admin_access_password_in_cntr" id="_id_admin_ax_pw">
+
+                let login_admin_axs_bt_cntr = document.querySelector('.login_admin_axs_bt_cntr')
+                let admin_login_axs_id = document.getElementById('admin_login_axs_id')
+                .login_admin_axs_bt_cntr {display: initial;}
+                <button class="login_admin_axs_bt_cntr" id="admin_login_axs_id">Submit to gain entry!</button>
+
+            </div>
+
+            <!-- ?/display -->
+            <button class="admin_bt_cntr" id="admin_access_id">get admin access</button>
+
+
+
+        </div>
+
+        <!-- !admin -->
+
+
+        <!-- ** -->
+        <!-- !pending -->
+        <!--   ** -->
+        <style>
+            .pending_sub_cntr {}
+
+            /* 
+            .pending_sub_cntr>div {
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+            } */
+        </style>
+
+
+        <style>
+            .row {}
+
+            .cashboard_row {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+                grid-gap: 5vw;
+                height: 20vh;
+                background-color: black;
+                color: white;
+                margin-top: 7vh;
+
+            }
+
+            /* div(td){button/some_data} */
+            .cashboard_row>div {
+                height: 25vh;
+                width: 8vw;
+                background-color: blue;
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+                /* margin-bottom: 2vw; */
+                margin-bottom: 30vh;
+                z-index: -100;
+                position: fixed;
+            }
+
+
+            /* button */
+            .cashboard_row>div>button {
+                /* height: inherit; */
+                height: 20vh;
+                margin-top: 2.5vh;
+                margin-left: 4.5vw;
+                margin-right: 4.5vw;
+
+            }
+
+            .pending_button_td {
+                /* height: 20vh; */
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            /* 
+            .pending_th {
+                display: initial;
+            }
+
+            .pending_rows {
+                display: initial;
+            }
+
+
+            .cashboard_hover {
+                display: initial;
+            }
+
+            .cashboard_td {
+                display: initial;
+            }
+
+            .td_data {
+                display: initial;
+            }
+
+            .pending_button_action {
+                display: initial;
+            }
+
+            .td_action {
+                display: initial; */
+            /* } */
+        </style>
+
+        <script>
+            let pending_container = document.getElementById('pending_id_sub')
+
+            let pending_th = document.querySelector('.pending_th')
+            let td = document.querySelector('.td')
+            let pending_sub_cntr = document.querySelector('pending_sub_cntr')
+            let pending_rows = document.querySelector('.pending_rows')
+            let cashboard_hover = document.querySelector('.cashboard_hover')
+            let td_data = document.querySelector('.td_data')
+            let td_action = document.querySelector('.td_action')
+            let pending_button_action = document.querySelector('.pending_button_td ')
+            let cashboard_td = document.querySelector('.cashboard_td')
+        </script>
+
+        <div class="pending_sub_cntr" id="pending_id_sub">
+
+            <!-- !rows -->
+            <div class="row cashboard_row">
+                <div class="td pending_th pending_rows cashboard_hover cashboard_td">
+                    <button class="td_data pending_button_td td_action">some_data</button>
+                </div>
+                <div class="td pending_th pending_rows cashboard_hover cashboard_td">
+                    <button class="td_data pending_button_td td_action">some_data</button>
+                </div>
+                <div class="td pending_th pending_rows cashboard_hover cashboard_td">
+                    <button class="td_data pending_button_td td_action">some_data</button>
+                </div>
+                <div class="td pending_th pending_rows cashboard_hover cashboard_td">
+                    <button class="td_data pending_button_td td_action">some_data</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!--   ** -->
+        <!-- !/pending -->
+        <!-- ** -->
+
+
+    </div>
+    <script src="../../public/search/search.js"></script>
+    <script src="../../public/admin/admin.js"></script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

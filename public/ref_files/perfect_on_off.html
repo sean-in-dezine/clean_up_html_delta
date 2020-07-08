@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASH$BOARD</title>
+</head>
+
+<body>
+
+
+    <!--*main, mothafucka-->
+    <!-- let container_main = document.querySelector('.container_main') 
+ /*   */ -->
+    <div class="container_main" id="maincontainer">
+
+
+
+
+        <!-- !search -->
+
+        <style>
+            .container_main {
+                display: grid;
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .search_bt_cntr {
+                display: initial;
+                text-align: center;
+                vertical-align: center;
+                justify-items: center;
+                justify-self: center;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+
+
+
+
+
+            }
+
+            .search_sub_cntr {
+                display: initial;
+            }
+
+            .search_in_cntr {
+                display: initial;
+            }
+        </style>
+
+        <div class="search_sub_cntr" id="searchContainer">
+
+            <label for='search'>Search for loops, or users. You'll be directed to either a loop card or a log, and can
+                always access the log from the card. Press x to excape.</label>
+
+            <input type="text" class="search_in_cntr" id="search" name='search' required='true' placeholder='search'>
+            <button class="search_bt_cntr" id="search_button_id">Search</button>
+
+        </div>
+
+        <!-- !/search -->
+
+
+
+        <!-- !admin -->
+        <style>
+            .admin_sub_cntr {
+                display: grid
+            }
+
+            .admin_bt_cntr {
+                display: initial;
+            }
+        </style>
+
+
+        <div class="admin_sub_cntr" id="admin_container">
+
+
+            <h1>admin</h1>
+
+
+
+            <h1>just use img#dice { display: none; } and stop fucking with it</h1>
+
+
+
+
+            <div class="display_admin_dv_cntr" id="display_admin">
+
+
+                <style>
+                    .admin_access_username_in_cntr {
+                        display: none;
+                    }
+
+                    .admin_access_password_in_cntr {
+                        display: none;
+                    }
+
+                    .display_admin_dv_cntr {
+                        display: none;
+                    }
+                </style>
+                <input type="text" class="admin_access_username_in_cntr" id="id_admin_ax_user">
+
+
+                <input type="password" class="admin_access_password_in_cntr" id="_id_admin_ax_pw">
+
+            </div>
+
+            <h1>click get admin access</h1>
+            <!-- ?/display -->
+            <button class="admin_bt_cntr" id="admin_access_id">get admin access</button>
+
+
+
+        </div>
+
+        <!-- !admin -->
+
+
+        <!-- ** -->
+        <!-- !pending -->
+        <!--   ** -->
+        <style>
+            .pending_sub_cntr {
+                display: initial;
+            }
+        </style>
+
+
+        <div class="pending_sub_cntr" id="pending_id_sub">
+
+            <!-- !rows -->
+
+            <style>
+                .row {}
+
+                .cashboard_row {}
+
+                .pending_th {
+                    display: initial;
+                }
+
+                .pending_rows {
+                    display: initial;
+                }
+
+
+                .cashboard_hover {
+                    display: initial;
+                }
+
+                .cashboard_td {
+                    display: initial;
+                }
+
+                .td_data {
+                    display: initial;
+                }
+
+                .pending_button_action {
+                    display: initial;
+                }
+
+                .td_action {
+                    display: initial;
+                }
+            </style>
+
+            <script>
+                let pending_container = document.getElementById('pending_id_sub')
+
+                let pending_th = document.querySelector('.pending_th')
+                let td = document.querySelector('.td')
+                let pending_sub_cntr = document.querySelector('pending_sub_cntr')
+                let pending_rows = document.querySelector('.pending_rows')
+                let cashboard_hover = document.querySelector('.cashboard_hover')
+                let td_data = document.querySelector('.td_data')
+                let td_action = document.querySelector('.td_action')
+                let pending_button_action = document.querySelector('.pending_button_action')
+                let cashboard_td = document.querySelector('.cashboard_td')
+            </script>
+            <div class="row cashboard_row">
+                <div class="td pending_th pending_rows cashboard_hover cashboard_td">
+                    <button class="td_data pending_button_td td_action">some_data</button>
+                </div>
+                <div class="td pending_th pending_rows cashboard_hover cashboard_td">
+                    <button class="td_data pending_button_td td_action">some_data</button>
+                </div>
+                <div class="td pending_th pending_rows cashboard_hover cashboard_td">
+                    <button class="td_data pending_button_td td_action">some_data</button>
+                </div>
+                <div class="td pending_th pending_rows cashboard_hover cashboard_td">
+                    <button class="td_data pending_button_td td_action">some_data</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!--   ** -->
+        <!-- !/pending -->
+        <!-- ** -->
+
+
+    </div>
+    <script src="../../public/search/search.js"></script>
+    <!-- <script src="../../public/admin/admin.js"></script> -->
+
+    <script>
+        let onnnnn
+        let param = {}
+
+
+        let admin_access_username_in_cntr = document.querySelector('.admin_access_username_in_cntr')
+        let id_admin_ax_user = document.getElementById('id_admin_ax_user')
+        let admin_access_password_in_cntr = document.querySelector('.admin_access_password_in_cntr')
+        let _id_admin_ax_pw = document.getElementById('_id_admin_ax_pw')
+        let display_admin_dv_cntr = document.querySelector('.display_admin_dv_cntr')
+        let display_admin = document.getElementById('display_admin')
+        let admin_access_id = document.getElementById('admin_access_id')
+
+
+        function setDisplays(param) {
+            if (param === 'on') {
+                _id_admin_ax_pw.style.display = 'none'
+                display_admin.style.display = 'none'
+                id_admin_ax_user.style.display = 'none'
+
+            } else if (param === 'off') {
+                _id_admin_ax_pw.style.display = 'initial'
+                display_admin.style.display = 'initial'
+                id_admin_ax_user.style.display = 'initial'
+            } else {
+                console.error('error')
+            }
+
+        }
+
+
+
+
+
+        function setDefaults(onnnnn) {
+            onnnnn = 'off'
+        }
+
+        window.onload = setDefaults(onnnnn)
+
+        admin_access_id.addEventListener('click', getLoginOptsAdmin)
+
+
+        function getLoginOptsAdmin(ev) {
+            let initial, none
+            ev.preventDefault()
+            // setDisplays(onnnnn)
+            console.log(onnnnn, 'before')
+            if (onnnnn === 'on') {
+                initial = 'on'
+                setDisplays(initial)
+                onnnnn = 'off'
+            } else {
+                onnnnn = 'on'
+                none = 'off'
+                setDisplays(none)
+            }
+            console.log(onnnnn, 'after')
+
+
+        }
+    </script>
+
+</body>
+
+</html>

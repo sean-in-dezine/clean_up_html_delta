@@ -1,4 +1,4 @@
-const asyncHandler = require('../recycled_middleware/async');
+const asyncHandler = require('../../recycled_middleware/async');
 // const ErrorResponse = require('../utils/errorResponse');
 
 exports.rejectionRate = (req, res) => {

@@ -96,13 +96,31 @@ submit_users_id.addEventListener('click', getUsers)
 
 function getUsers(ev, req) {
     ev.preventDefault()
-    let body = user.value
+
+
+    let body = {
+        user: user.value,
+        code: "index/getUser",
+        fetch: {
+            fn: 'getUsers',
+            route: '/users',
+            from: window.location.href,
+            file: "auth.js",
+            html: "auth.html",
+            user_action: "submit one user\'s name"
+        }
+    }
+    console.log('not stringified: body')
+    console.log(body)
     body = JSON.stringify({
         body
     })
+    console.log('JSON.stringify(body)')
+    console.log(body)
+
     let h = new Headers()
     h.append('content-type', 'application/json')
-    let url = '/users'
+    let url = window.location.href + 'users'
     let options = {
         method: 'POST',
         headers: h,
@@ -110,7 +128,7 @@ function getUsers(ev, req) {
     }
     req = new Request(url, options)
     fetch(req)
-        .then(res => res.json())
+        .then(res => res.text())
         .then(data => console.log(data))
         .catch(err => console.error(err))
 }
@@ -126,10 +144,9 @@ function fetchUrl(req) {
             let data = res.json()
             return data
         }).then(data => {
-            console.log(data)
+            //? console.log here %%log
+            console.log('public/js/auth.js > fetchUrl(req) (/register)', data)
             RETURN_REGISTRATION(data)
-
-
         }).catch(err => console.trace(err))
 
     })
@@ -167,7 +184,8 @@ if (submit_registration !== null) {
             phn,
             key,
             pwd,
-            eml
+            eml,
+            code: 'register/give-em-hell'
         }
         data = JSON.stringify(data)
         console.log(data)

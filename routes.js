@@ -9,34 +9,110 @@ console.log('router'.brightMagenta)
 let users = require('./handlers')
 users = users.users
 
+
+
+
+
+const {
+  createUser,
+  updateUser,
+  changePassword,
+  forgotPassword,
+  restructureUsers,
+  upgradePermissions
+} = require('./handlers/recycled_handlers/users')
+
+const {
+  trainingHome
+} = require('./handlers/recycled_handlers/training')
+const {
+  rejectionRate,
+  rejectByDate,
+  rejectByUser,
+  statOverview
+} = require('./handlers/recycled_handlers/stats')
+const {
+  searchLoops,
+  searchSystems,
+  searchHydro,
+  searchDate,
+  searchText,
+  searchLog,
+  searchUsers,
+  searchTrouble,
+  searchMissingVendocs
+} = require('./handlers/recycled_handlers/search')
+const {
+  requestOwnership,
+  assignOwnership
+} = require('./handlers/recycled_handlers/xfr')
+const {
+  login,
+  logout
+} = require('./handlers/recycled_handlers/login')
+const {
+  indexRoute
+} = require('./handlers/recycled_handlers/login')
+
+
+const {
+  cashSearch
+} = require('./handlers/search')
+
+// !currently in production below
+//* cashboard
+router
+  .route('/cash/money')
+  .get((req, res, next) => {
+    res.sendFile(__dirname + '/public/cashboard.html')
+  })
+
+
+router
+  .route('/search')
+  .post(cashSearch)
+
+router
+  .route('/login')
+  .get(login)
+  .post(login)
+
+
 router
   .route('/users')
   .post(users)
 
+const {
+  register
+} = require('./handlers')
+// register = register.register
+
+router
+  .route('/register')
+  .post(register)
+// .post((req, res, next) => {
+//   console.log(req.url, req.method);
+//   console.log(req.originalUrl, req.method);
+//   res.json({
+//     success: "tr00",
+//   });
+// });
 
 
-  
-  const {
-    createUser,
-    updateUser,
-    changePassword,
-    forgotPassword,
-    restructureUsers,
-    upgradePermissions
-} = require('./recycled_handlers/users')
 
-const { trainingHome } = require('./recycled_handlers/training')
-const { rejectionRate, rejectByDate, rejectByUser, statOverview } = require('./recycled_handlers/stats')
-const {searchLoops, searchSystems, searchHydro, searchDate, searchText, searchLog, searchUsers, searchTrouble, searchMissingVendocs} = require('./recycled_handlers/search')
-const {requestOwnership, assignOwnership} = require('./recycled_handlers/xfr')
-const { login, logout } = require('./recycled_handlers/login')
-const { indexRoute } = require('./recycled_handlers/login')
 
-router.get('/rooooooodypooh', login)
+
+
+// !currently in production above
+
+// *
+
+// !not currently in production below
+
 router.get('/training', trainingHome)
 router.get('/logout', logout)
 
-router.get('/request', requestOwnership )
+router.get('/request', requestOwnership)
 router.get('/assign', assignOwnership)
 
 
@@ -52,15 +128,77 @@ router.get('/missingvendocs', searchMissingVendocs)
 
 
 
-const { recentChanges, rcByUser, rcByFolder, rcByPackage, rcBySystem, rcByStatus, rcByPrelooped, rcByInQC, rcByBackQC, rcByNeedsHydro, rcByNeedsVendocs, rcByRejected, rcByWaiting, rcBySold, rcByWorking, rcByReadyPre, rcByReadySell, rcByTrouble, rcByNeedsValues, rcByBuilt, rcByNotBuilt, rcByBeginning, rcByFieldComplete, rcByTechWalked, rcByMostChanged, rcByMostChangedFolders, rcByMostChangedUsers, rcByComments } = require('./recycled_handlers/log')
-const { getForm, postForm, viewForms, manageForms, requestForm, addComment, addCommentForm } = require('./recycled_handlers/forms')
-const {getAllUsers, getSingleUser, getAssignments, getAssignOut, getAssignIn, getAssignIncomplete, getAssignRej, getAssignPass, getSold, getSoldUser, getBySystem, getByPackage, getByLoop, getAll } = require('./recycled_handlers/dashboard')
-const {reportBugs, viewBugs, viewTicket} = require('./recycled_handlers/bugs')
-const { authSuccess, authFailed, authTimeout } = require('./recycled_handlers/auth')
+const {
+  recentChanges,
+  rcByUser,
+  rcByFolder,
+  rcByPackage,
+  rcBySystem,
+  rcByStatus,
+  rcByPrelooped,
+  rcByInQC,
+  rcByBackQC,
+  rcByNeedsHydro,
+  rcByNeedsVendocs,
+  rcByRejected,
+  rcByWaiting,
+  rcBySold,
+  rcByWorking,
+  rcByReadyPre,
+  rcByReadySell,
+  rcByTrouble,
+  rcByNeedsValues,
+  rcByBuilt,
+  rcByNotBuilt,
+  rcByBeginning,
+  rcByFieldComplete,
+  rcByTechWalked,
+  rcByMostChanged,
+  rcByMostChangedFolders,
+  rcByMostChangedUsers,
+  rcByComments
+} = require('./handlers/recycled_handlers/log')
+const {
+  getForm,
+  postForm,
+  viewForms,
+  manageForms,
+  requestForm,
+  addComment,
+  addCommentForm
+} = require('./handlers/recycled_handlers/forms')
+const {
+  getAllUsers,
+  getSingleUser,
+  getAssignments,
+  getAssignOut,
+  getAssignIn,
+  getAssignIncomplete,
+  getAssignRej,
+  getAssignPass,
+  getSold,
+  getSoldUser,
+  getBySystem,
+  getByPackage,
+  getByLoop,
+  getAll
+} = require('./handlers/recycled_handlers/dashboard')
+const {
+  reportBugs,
+  viewBugs,
+  viewTicket
+} = require('./handlers/recycled_handlers/bugs')
+const {
+  authSuccess,
+  authFailed,
+  authTimeout
+} = require('./handlers/recycled_handlers/auth')
 
 
-const acceptAll = (req, res, next)=> {
-  res.json({all: "you've requested"})
+const acceptAll = (req, res, next) => {
+  res.json({
+    all: "you've requested"
+  })
 }
 
 
@@ -75,9 +213,7 @@ const acceptAll = (req, res, next)=> {
 // ! these have to be sent with the admin route.
 
 
-
-
-router.get('/pending/acceptall' ,acceptAll)
+router.get('/pending/acceptall', acceptAll)
 
 router.get('/success=true', authSuccess)
 router.get('/success=false', authFailed)
@@ -93,7 +229,7 @@ router.get('/getassignments', getAssignments)
 router.get('/getassignout', getAssignOut)
 router.get('/getassignin', getAssignIn)
 router.get('/getassignincomplete', getAssignIncomplete)
-router.get('/getassignrej', getAssignRej)  
+router.get('/getassignrej', getAssignRej)
 router.get('/getassignpass', getAssignPass)
 router.get('/getsold', getSold)
 router.get('/getsolduser', getSoldUser)
@@ -144,15 +280,13 @@ router.get('/recent/comments', rcByComments)
 
 
 
-
-
-
-
 router.get('/rejectionrate', rejectionRate)
 router.get('/rejectionrate/date', rejectByDate)
 router.get('/rejectionrate/user', rejectByUser)
 router.get('/overview', statOverview)
 
+
+// !end of not currently in produciton
 
 
 

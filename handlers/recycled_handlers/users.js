@@ -1,8 +1,15 @@
-const asyncHandler = require('../recycled_middleware/async');
+const asyncHandler = require('../../recycled_middleware/async');
 // const ErrorResponse = require('../utils/errorResponse');
 
 exports.createUser = (req, res) => {
-    res.send('create user')
+
+
+    boday = req.body.body
+    // boday = JSON.stringify(boday)
+    res.json({
+       sup:
+    "bitchnes"
+    })
 }
 exports.updateUser = (req, res) => {
     res.send('update user')
