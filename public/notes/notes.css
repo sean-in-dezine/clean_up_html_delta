@@ -42,8 +42,13 @@
 
 }
 
-.super_notes_post_um_dv_cntr {display: initial;}
-.get_it_on_notes {display: initial;}
+.super_notes_post_um_dv_cntr {
+    display: initial;
+}
+
+.get_it_on_notes {
+    display: initial;
+}
 
 .super_notes_input {
     display: grid;
@@ -79,4 +84,10 @@
 
 
 
-.filter_sub_cntr {display: initial;}
+.filter_sub_cntr {
+    display: initial;
+}
+
+._btn_generate_filters_btns {
+    display: initial;
+}

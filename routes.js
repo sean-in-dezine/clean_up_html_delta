@@ -140,6 +140,22 @@ router
     })
   })
 
+router
+  .route('/card')
+  .post((req, res, next) => {
+    res.json({
+      thanks: 'for the successful post to the card rt'
+    })
+  })
+
+router
+  .route('/reports')
+  .post((req, res, next) => {
+    res.json({
+      reports: "accessed"
+    })
+  })
+
 
 // !currently in production above
 

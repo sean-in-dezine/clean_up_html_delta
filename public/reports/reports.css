@@ -1,0 +1,43 @@
+.reports_bt_cntr {
+    background-color: blue;
+}
+
+
+.reports_sub_container>* {
+    margin-top: 10em;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 40vh;
+
+
+}
+
+.reports_sub_container>* {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 5fr 3fr 1fr;
+    height: 20vh;
+    text-align: center;
+    vertical-align: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.reports_sub_container>div>* {
+
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+}
+
+
+.reports_input_in_cntr {
+    background-color: red;
+    color: white;
+    width: 100%;
+
+}
