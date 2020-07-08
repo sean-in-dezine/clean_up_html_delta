@@ -4,14 +4,20 @@ const path = require("path");
 const colors = require("colors");
 const morgan = require("morgan");
 const router = require('./routes')
+const bodyParser = require('body-parser')
 
 const port = 3559;
 console.log('server'.brightMagenta)
 app.use(morgan("dev"));
 app.listen(port, console.log(`listening on port ${port}`.brightBlue.bold));
 
+app.use(express.json())
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
+
 app.use(express.static(__dirname + "/"));
-app.use(router)
+
 
 let request_logger = require("./middleware.js");
 request_logger = request_logger.request_logger;
@@ -20,6 +26,7 @@ app.use("/", request_logger);
 let handlers = require('./handlers')
 handlers = handlers.handlers
 handlers()
+app.use(router)
 
 
 app.get("/", (req, res, next) => {
