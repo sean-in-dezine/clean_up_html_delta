@@ -1,7 +1,7 @@
-let reports_bt_cntr = document.querySelector('.reports_bt_cntr')
-let reports_btn_id = document.getElementById('reports_btn_id')
-let reports_input_in_cntr = document.querySelector('.reports_input_in_cntr')
-let reports_input_id = document.getElementById('reports_input_id')
+// let reports_bt_cntr = document.querySelector('.reports_bt_cntr')
+// let reports_btn_id = document.getElementById('reports_btn_id')
+// let reports_input_in_cntr = document.querySelector('.reports_input_in_cntr')
+// let reports_input_id = document.getElementById('reports_input_id')
 reports_btn_id.addEventListener('click', runReportClicked)
 
 function runReportClicked(ev) {

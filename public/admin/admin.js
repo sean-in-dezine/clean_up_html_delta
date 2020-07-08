@@ -71,7 +71,6 @@ function setDefaults(onnnnn) {
     onnnnn = 'off'
     return defaultGains = switchGains(onnnnn)
 }
-console.log(defaultGains)
 let gains
 
 let hereitis = function skipHere(initial) {
@@ -118,7 +117,9 @@ async function switchGains(hereitis) {
         res = console.log(res)
         return res
     })).catch((err => {
-        console.log('nope, didn\'t make it out\n\n\n', err)
+        // console.log('nope, didn\'t make it out\n\n\n', err)
+
+
     }))
 
 }

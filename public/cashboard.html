@@ -5,9 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CASH$BOARD</title>
+    <link rel="stylesheet" href="../../public/cashboard.css">
     <link rel="stylesheet" href="../../public/filters/filters.css">
     <link rel="stylesheet" href="../../public/card/card.css">
     <link rel="stylesheet" href="../../public/reports/reports.css">
+    <link rel="stylesheet" href="../../public/log/log.css">
+    <link rel="stylesheet" href="../../public/pending/pending.css">
+    <link rel="stylesheet" href="../../public/current/current.css">
+    <link rel="stylesheet" href="../../public/past/past.css">
+    <link rel="stylesheet" href="../../public/reports/reports.css">
+    <link rel="stylesheet" href="../../public/notes/notes.css">
+    <link rel="stylesheet" href="../../public/forms/forms.css">
+    <link rel="stylesheet" href="../../public/admin/admin.css">
+    <link rel="stylesheet" href="../../public/users/users.css">
+    <link rel="stylesheet" href="../../public/register/register.css">
+    <link rel="stylesheet" href="../../public/search/search.css">
+    <link rel="stylesheet" href="../../public/cashboard/cashboard.css">
+    <link rel="stylesheet" href="../../public/login/login.css">
+    <link rel="stylesheet" href="../../public/auth/auth.css">
+
+
+
 </head>
 
 <body>
@@ -24,36 +42,6 @@
         <!-- !search -->
 
         <style>
-            .container_main {
-                display: grid;
-                text-align: center;
-                vertical-align: center;
-                justify-items: center;
-                justify-self: center;
-                align-self: center;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .search_bt_cntr {
-                display: initial;
-                text-align: center;
-                vertical-align: center;
-                justify-items: center;
-                justify-self: center;
-                align-self: center;
-                align-items: center;
-                justify-content: center;
-
-            }
-
-            .search_sub_cntr {
-                display: initial;
-            }
-
-            .search_in_cntr {
-                display: initial;
-            }
         </style>
 
         <div class="search_sub_cntr" id="searchContainer">
@@ -72,13 +60,6 @@
 
         <!-- !admin -->
         <style>
-            .admin_sub_cntr {
-                display: grid
-            }
-
-            .admin_bt_cntr {
-                display: initial;
-            }
         </style>
 
 
@@ -136,128 +117,7 @@
         <!-- !pending -->
         <!--   ** -->
         <style>
-            .pending_sub_cntr {}
 
-            /* 
-            .pending_sub_cntr>div {
-                text-align: center;
-                vertical-align: center;
-                justify-items: center;
-                justify-self: center;
-                align-self: center;
-                align-items: center;
-                justify-content: center;
-            } */
-        </style>
-
-
-        <style>
-            .row {}
-
-            .cashboard_row {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                text-align: center;
-                vertical-align: center;
-                justify-items: center;
-                justify-self: center;
-                align-self: center;
-                align-items: center;
-                justify-content: center;
-                grid-gap: 5vw;
-                height: 20vh;
-                background-color: black;
-                color: white;
-                margin-top: 7vh;
-                padding-bottom: 5vh;
-            }
-
-            /* div(td){button/some_data} */
-            .cashboard_row>div {
-                height: 25vh;
-                width: 8vw;
-                background-color: blue;
-                text-align: center;
-                vertical-align: center;
-                justify-items: center;
-                justify-self: center;
-                align-self: center;
-                align-items: center;
-                justify-content: center;
-                /* margin-bottom: 2vw; */
-                margin-bottom: 8vh;
-                z-index: 15;
-                margin-top: 3vh;
-                margin-left: 1vw;
-                margin-right: 1vw;
-                position: relative;
-            }
-
-
-            /* button */
-            .cashboard_row>div>button {
-                /* height: inherit; */
-                height: 20vh;
-                margin-top: 2.5vh;
-                margin-left: -1.5vw;
-                width: 11vw;
-                /* margin-right: 4.5vw; */
-
-            }
-
-            .pending_button_td {
-                /* height: 20vh; */
-                text-align: center;
-                vertical-align: center;
-                justify-items: center;
-                justify-self: center;
-                align-self: center;
-                align-items: center;
-                justify-content: center;
-
-            }
-
-            /* 
-            .pending_th {
-                display: initial;
-            }
-
-            .pending_rows {
-                display: initial;
-            }
-
-
-            .cashboard_hover {
-                display: initial;
-            }
-
-            .cashboard_td {
-                display: initial;
-            }
-
-            .td_data {
-                display: initial;
-            }
-
-            .pending_button_action {
-                display: initial;
-            }
-
-            .td_action {
-                display: initial; */
-            /* } */
-
-
-
-            .transition_RIGHT_from_left {}
-
-            .transition_LEFT_from_right {}
-
-            .transition_FRONT_from_bottom_stack {}
-
-            .transition_BACK_from_bottom_stack {}
-
-            .cashboard_generated_rows {}
         </style>
 
         <script>
@@ -671,14 +531,23 @@
 
 
     </div>
-    <script src="../../public/search/search.js"></script>
-    <script src="../../public/admin/admin.js"></script>
     <script src="../../public/utils/hackerattempt.js"></script>
-    <script src="../../public/forms/forms.js"></script>
-    <script src="../../public/notes/notes.js"></script>
     <script src="../../public/filters/filters.js"></script>
     <script src="../../public/card/card.js"></script>
     <script src="../../public/reports/reports.js"></script>
+    <script src="../../public/log/log.js"></script>
+    <script src="../../public/pending/pending.js"></script>
+    <script src="../../public/current/current.js"></script>
+    <script src="../../public/past/past.js"></script>
+    <script src="../../public/reports/reports.js"></script>
+    <script src="../../public/notes/notes.js"></script>
+    <script src="../../public/forms/forms.js"></script>
+    <script src="../../public/admin/admin.js"></script>
+    <script src="../../public/users/users.js"></script>
+    <script src="../../public/register/register.js"></script>
+    <script src="../../public/search/search.js"></script>
+    <script src="../../public/cashboard/cashboard.js"></script>
+    <script src="../../public/login/login.js"></script>
 
     <script>
 

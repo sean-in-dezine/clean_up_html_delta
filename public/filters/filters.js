@@ -57,7 +57,7 @@ function filtersOnLoad() {
 const addFiltersButton = () => {
     let temp_selector = document.createElement('button')
     temp_selector.id = '_btn_generate_filters_btns'
-    console.log(temp_selector)
+    //! console.log(temp_selector)
     temp_selector.class = "_btn_generate_filters_btns filters_target_button"
     temp_selector.name = "spectacular"
     temp_selector.textContent = 'yoyoyoyoyoyoyoyollllooo'
