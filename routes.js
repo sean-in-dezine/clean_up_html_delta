@@ -86,10 +86,7 @@ const {
   register
 } = require('./handlers')
 // register = register.register
-
-router
-  .route('/register')
-  .post(register)
+// !delete
 // .post((req, res, next) => {
 //   console.log(req.url, req.method);
 //   console.log(req.originalUrl, req.method);
@@ -98,9 +95,50 @@ router
 //   });
 // });
 
+router
+  .route('/register')
+  .post(register)
+
+
+// !7/8
+router
+  .route('/admin')
+  .post((req, res, next) => {
+    res.json({
+      USER: "ADMIN",
+      login: "canigetawhatwhat"
+    })
+  })
+router
+  .route('/hackerattempt')
+  .post((req, res, next) => {
+    res.json({
+      hackerattempt: 'logged'
+    })
+  })
 
 
 
+router
+  .route('/forms')
+  .post((req, res, next) => {
+    res.json({
+      forms: "request received, here is your res"
+    })
+  })
+
+
+router
+  .route('/notes')
+  .post((req, res, next) => {
+
+    let body = req.body.params
+    res.json({
+      ahh: "my dear lad",
+      yee_sent_me: "yarg",
+      and_a_little_sumthin_extra: body
+    })
+  })
 
 
 // !currently in production above

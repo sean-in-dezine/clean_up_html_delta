@@ -1,0 +1,33 @@
+.filters {display: initial;}
+.hidden {display: initial;}
+.bg2 {display: initial;}
+
+#filterone {display: initial;}
+
+.filtergrid {display: initial;}
+.filtergrid>.li {display: initial;}
+
+
+
+#user {display: initial;}
+
+#filter_comment {display: initial;}
+#filter_user {display: initial;}
+#filter_test {display: initial;}
+#filter_system {display: initial;}
+#filter_status {display: initial;}
+#filter_IO_LOCation {display: initial;}
+#filter_loop {display: initial;}
+
+
+
+#filter_date {display: initial;}
+
+  
+
+.li {
+  
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
