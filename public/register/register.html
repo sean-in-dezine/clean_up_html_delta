@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+    <title>cashmoney</title>
+    <style>
+        body>div {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            align-items: center;
+            justify-self: center;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        body>* {
+            border: solid;
+            margin: 2vh;
+            padding: 2vw;
+        }
+
+        body>div>* {
+            border: solid;
+            margin: 2vh;
+            padding: 2vw;
+
+
+        }
+
+        .loopbtns {
+            display: grid;
+            grid-template-columns: 4fr;
+        }
+
+        .loopbtns>div {
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 5.5vh;
+
+            margin: 2em;
+
+            grid-gap: 5em;
+
+            /* text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        .loopbtns>div>a>button:hover {
+            background-color: white;
+            font-size: 25px;
+            position: static;
+            margin-bottom: 3vh;
+            height: 130%;
+            border: solid 10px;
+            color: black;
+            font-weight: 900;
+        }
+
+        .loopbtns>div>a>button {
+            height: 120%;
+            border: solid;
+            background-color: red;
+            position: relative;
+            margin-bottom: 2vh;
+            color: white;
+            font-size: 22px;
+        }
+
+        .loopbtns>div>a {
+            height: 150%;
+            border: solid;
+            position: relative;
+            background-color: blue;
+        }
+
+        .oneuser {
+            grid-column-span: 1/8;
+            /* display: grid; */
+            /* grid-column-span: 3/5; */
+            /* grid-row-span: 1/5; */
+        }
+
+        .postreq {
+            grid-column: 1/4;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .getUsers {
+            /* grid-column-span: 3/5; */
+            /* grid-row-span: 1/5; */
+        }
+
+        .dirty_money {
+            background-color: green;
+
+        }
+
+        .dirty_money:hover {
+            background-color: limegreen;
+            opacity: 88%;
+            z-index: 5;
+            border: solid red;
+            color: white;
+
+        }
+
+        .murdy_dunnie {
+
+            background-color: limegreen;
+            z-index: 3;
+            /* z-index: 1; */
+            opacity: 88%;
+        }
+
+        .murdy_dunnie:hover {
+            background-color: green;
+            color: white;
+
+            z-index: 2;
+        }
+
+        .dirty_daddies {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 10vw;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dirty_daddies>*>div>a {
+            width: 100%;
+        }
+
+        .loopbtns>div {
+            width: 100%;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dirty_daddies>*>*>button {
+            width: 100%;
+        }
+
+        .dirty_daddies>div {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div>
+    <div class="dirty_daddies">
+
+        <div class="loopbtns">
+            <div id="floater">
+                <a href="../cash/money/" class="href"> <button id="gocashboard">go2cashboard</button></a>
+            </div>
+            <div id="boater">
+                <a href="cash/money/" class="href">
+                    <button id="loopbutton">cashboard go</button></a>
+
+            </div>
+        </div>
+        <div class="loopbtns">
+
+            <a href="../cash/money/" class="murdy_dunnie href">
+                <button class="dirty_money">
+                    <h1 class="murdy_dunnie">cashboard</h1>
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div>
+        <div class="form">
+            <!-- !form -->
+            <form action="#" class="form" id="form">
+                <div class="name">
+                    <h1>name</h1>
+                    <input type="text" name="username" class="input" id="username" placeholder="Sean Kincaid" />
+                </div>
+                <div class="phone">
+                    <h1>phone numbah</h1>
+                    <input type="text" class="input" id="phone" name="phone"
+                        placeholder="(571)457-1257 [Sean Kincaid's Cell - SBEC]" />
+                </div>
+                <div class="badge">
+                    <h1>badge #</h1>
+                    <input type="text" name="badge" class="input" id="badge" placeholder="45886" />
+                </div>
+                <div class="email">
+                    <h1>email</h1>
+                    <input type="text" name="email" class="input" id="email" placeholder="srkincaid@sbec.com" />
+                </div>
+                <div class="password">
+                    <h1>password</h1>
+                    <input type="text" name="password" class="password" id="password"
+                        placeholder="x**$bigProjex \<~ example of good password ('write it down!!)" />
+                </div>
+
+                <div class="submit">
+                    <button class="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- !users -->
+
+        <button id="clearchanges" class="clearchanges" style="background-color: red; color: white;">
+            clear changes
+        </button>
+
+        <button id="getusers" class="getusers" style="background-color: blue; color: white;">
+            get users
+        </button>
+
+        <button id="delusers" class="delusers" style="background-color: orange; color: white;">
+            delete users
+        </button>
+    </div>
+
+    <span class="getusers">
+        Users:
+        <ul class="getusers" id="ul"></ul>
+    </span>
+
+
+
+
+
+
+
+    <div class="oneuser">
+        <form action="" id="oneuserform">
+            <input type="text" placeholder="sean" name="oneuser" id="oneuserinput" />
+            <label for="oneuser">type user name</label>
+            <button id="getoneuser" class="getoneuser" style="background-color: green; color: white;">
+                get one user
+            </button>
+
+            <button id="deloneuser" class="delusers" style="background-color: orange; color: white;">
+                delete one user
+            </button>
+        </form>
+    </div>
+    <div>
+        <button id="togglefilters">toggle filters</button>
+
+        <span class="filterresult">
+            <!-- <button class="selectfilters">filter0</button>
+          <button class="selectfilters">filter1</button>
+          <button class="selectfilters">filter2</button>
+          <button class="selectfilters">filter3</button>
+          <button class="selectfilters">filter4</button>
+          <button class="selectfilters">filter5</button>
+          <button class="selectfilters">filter6</button>
+          <button class="selectfilters">filter7</button>
+          <button class="selectfilters">filter8</button>
+          <button class="selectfilters">filter9</button> -->
+
+            <div class="filtersSelected">
+                <ul>
+                    <li>default</li>
+                </ul>
+            </div>
+
+
+        </span>
+    </div>
+
+
+    <!-- !add loops -->
+    <!-- !add loops -->
+    <!-- !add loops -->
+
+    <div class="userbtns">
+        <a href="../loops" class="href">
+
+            <button id="userbutton">loops button</button>
+        </a>
+
+
+        <div class="addloops">
+            <button class="addloops" id="addloops">add loops</button>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- !add loops -->
+    <!-- !add loops -->
+    <!-- !add loops -->
+
+
+
+
+    <!-- !postreq -->
+    <div class="postreq">
+        <button class="postreq" id="postreq">(post_request).test</button>
+    </div>
+</div>
+
+<!-- <script src="../js/fetch.js"></script> -->
+<script src="../../../public/loops/add_loops.js"></script>
+
+
+<script src="../../../public/register/js/fetch.js"></script>
+<script src="../../../public/register/js/req.js"></script>
+<script src="../../../public/register/js/fetchuser.js"></script>
+<script src="../../../public/register/js/querydb.js"></script>
+<script src="../../../public/register/js/getoneuser.js"></script>
+<script src="../../../public/register/js/deleteusers.js"></script>
+<script src="../../../public/register/js/clearchanges.js"></script>
+</body>
+
+</html>

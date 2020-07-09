@@ -95,9 +95,29 @@ const {
 //   });
 // });
 
+
+// !register
+// !register
+// !register
 router
   .route('/register')
+  .get((req, res, next) => {
+    res.sendFile(__dirname + '/public/register/register.html')
+  })
   .post(register)
+
+
+router
+  .route('/register/users')
+  .get(users)
+  .post(users)
+
+
+
+
+// !register
+// !register
+// !register
 
 
 // !7/8

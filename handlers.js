@@ -102,8 +102,22 @@ exports.login = (req, res, next) => {
 //     }
 // }
 
+// @api
+// ?this is probably some shit code
+// !get to /register/users/
+// @api
 exports.users = (req, res, next) => {
     new Promise((resolve, reject) => {
+
+        if (req.method === 'GET') {
+            res.json({
+                success: 'helllll yeah'
+
+            })
+            resolve()
+        }
+
+
         if (req.method === 'POST') {
             let params = res.req.body
             let body = params
@@ -133,23 +147,10 @@ exports.users = (req, res, next) => {
             })
         }
     }).catch(err => {
-        let sendingstuff = {
-            errorcode: "1234",
-            becausethatmeans: "we haven't seen this before",
-            message: [
-                "the promise on the server for users > PROMISE > all the methods",
-                "this error is coming from the catch of that error"
-            ]
-        }
-        res.json({
-            sendingstuff
-        })
+        let sendingstuff = 5
+
         return console.log(err)
-    }).catch(err => {
-        // !adding another catch here, because if somehow the catch itself throws an error, the users can still "submit.. meaning i need this for pretty much everything. Chain a few promises together."
-        crazyShit(err)
-        return console.log(err, "!adding another catch here, because if somehow the catch itself throws an error, the users can still submit.. meaning i need this for pretty much everything. Chain a few promises together.")
-    })
+    }).catch(err => console.log(err))
 }
 
 
