@@ -110,3 +110,28 @@ lifecycle_progression: boolean
 
 ____dump to .csv
 */
+
+
+// !build middleware session log [%sean322]
+// * front end > backend. ... so like front end [ main fnality clicked > all inputs by section > userid > ip > > permissions any changes to those 3 things 
+let input = document.querySelector('input')
+input = 'button element'
+let section = {
+    input: [{
+        value: '1'
+    }, {
+        value: '2'
+    }]
+}
+let inputsarray = []
+section =
+    () => {
+        for (input in section) {
+            let val = input.value
+            inputsarray.push[{
+                input: val
+            }]
+        }
+    }
+
+// *imports in {section: {for (input in section) {let val = input.value

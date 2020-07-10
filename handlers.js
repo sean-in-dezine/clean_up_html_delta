@@ -11,11 +11,54 @@ const mongoose = require("mongoose");
 // ?  ..............................................................7/10/2020
 //! 7/10/2020
 const User = require("./models/recycled_models/users");
-//! 7/10/2020
 
 const Loop = require('./models/recycled_models/loops')
 
 const LogModel = require('./models/recycled_models/log')
+
+const Tranzakt = require('./models/Tranzakt')
+
+let todo_handler_count = 0
+let errstack = 0
+
+function findTodo(todo_handler_count) {
+    console.log('middleware begins here'.bgRed)
+    todo_handler_count = todo_handler_count + 1, console.log('>>> <<< \nline__ 19, \t<<<<<<\t<<<<<<FIRST >>big time middleware validation here 322\n\t<<<<<<'.brightYellow.bgGray.bold)
+    console.log('middleware ends here'.bgRed)
+    //TODO:big time middleware validation here 322
+}
+findTodo(todo_handler_count)
+console.log('handlers begin here'.underline.brightGreen)
+
+// !build middleware session log [%sean322]
+// * front end > backend. ... so like front end [ main fnality clicked > all inputs by section > userid > ip > > permissions any changes to those 3 things 
+
+/* 
+?let input = document.querySelector('input')
+?input = 'button element'
+?let section = {
+?    input: [{
+?        value: '1'
+?    }, {
+?        value: '2'
+?    }]
+?}
+?let inputsarray = []
+?section =
+?    () => {
+?        for (input in section) {
+?            let val = input.value
+?            inputsarray.push[{
+?                input: val
+?            }]
+?        }
+?    }
+
+    */
+// *imports in {section: {for (input in section) {let val = input.value
+
+//! 7/10/2020
+
 
 
 
@@ -400,7 +443,7 @@ exports.logrte = (req, res, next) => {
 
 
         console.log('error handling needed, all that shit, no req method checker nothing %sean322 exports.logrte')
-        let todo_handler_count = 0
+
         todo_handler_count = todo_handler_count + 1, console.log('>>> <<< \nline__ 383, \t<<<<<<\t<<<<<<this is in exports.logrte, just testing out my log object logrte object exports.logrte\n\t<<<<<<'.brightYellow.bgGray.bold)
         //TODO:this is in exports.logrte
         // !console.trace(by itself or something else) is alwasy an option
@@ -430,22 +473,40 @@ exports.logrte = (req, res, next) => {
                 }
             })
 
-            // !add to the log
+            // ?add to log
+            // !add to the log |POST|
         } else if (new_logrte_dt === addTo(logrte_dt)) {
             console.log('...else if (new lowgrte dt === adto(logrte_dt)')
 
             //TODO: do the actual functions
-            console.log('left off on 436')
 
-            res.json({
-                REQUEST: "get default LOG[recent, master]",
-                RESPONSE: "sure",
-                data: {
-                    req_based_res: new_logrte_dt,
-                    from_logrte_dt: logrte_dt.attempt,
-                    from_logrte_full: logrte_dt
-                }
-            })
+
+
+            new Promise((resolve, reject) => {
+                LogModel.create({
+                    createdAt: LogModel.default
+                }).then(ressies => {
+                    console.log(ressies)
+                    res.json({
+                        SUXESS: 'tr00',
+                        REQUEST: "get default LOG[recent, master]",
+                        RESPONSE: "sure",
+                        data: {
+                            req_based_res: new_logrte_dt,
+                            from_logrte_dt: logrte_dt.attempt,
+                            from_logrte_full: logrte_dt
+                        }
+                    })
+                }).catch(err => {
+                    res.json({
+                        no: 'good',
+                        err: err.stack,
+                        sean: 'sean322'
+                    })
+                    return console.error(err.stack)
+                })
+            }).catch(err => console.error(err.stack))
+
         }
 
 
@@ -474,12 +535,62 @@ exports.logrte = (req, res, next) => {
 
 
 
+// ?tranzakt
 // ! transfer loop [block]
 // *
 
+exports.tranzakt = (req, res, next) => {
+
+    if (req.method === 'POST') {
+
+        let addTranzakt = () => {
+            Tranzakt.create({
+                loopid: '1234',
+                date: Tranzakt.default
+            }).then(rezzzzie => {
+                console.log('success')
+                res.json({
+                    transaction: 'sucessxs'
+                })
+            }).catch(err => {
+                res.json({
+                    no: 'good',
+                    err: err.stack,
+                    sean: 'sean322'
+                })
+                return console.error(err.stack)
+            })
+        }
+        try {
+            addTranzakt()
+        } catch {
+            errstack = errstack + 1, console.error(err.stack), console.log(`\nERRORSTACK>\n${errstack}\n<ERRORSTACK\n`) //%sean322
+        }
+    } else if (req.method === 'GET') {
+        let getTranzakt = () => {
+            Tranzakt.find({}, (err, result) => {
+                if (!err) {
+                    res.json({
+                        result
+                    })
+                }
+            }).catch(err => {
+                res.json({
+                    no: 'good',
+                    err: err.stack,
+                    sean: 'sean322'
+                })
+                return console.error(err.stack)
+            })
+        }
+        getTranzakt()
+    }
+}
 
 // *
 // ! /transfer loop [block]
+
+
 
 
 
