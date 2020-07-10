@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const LoopsSchema = new mongoose.Schema({
-    loopNumber: {
+    loopid: {
         type: String,
         required: true
     },
@@ -21,7 +21,7 @@ const LoopsSchema = new mongoose.Schema({
         type: Date
     },
     hydro: {
-        type: boolean
+        type: Boolean
     },
     hydroStatus: {
         type: Boolean
