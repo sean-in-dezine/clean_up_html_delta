@@ -14,6 +14,7 @@ fbolog
     -fbogetlog |lot |fan |mdl |glbl |postmanned?[no]
     -fboaddlog |lot |fan |mdl |glbl |postmanned?[no]
 
+
 loop
 fboloop
     -fboaddloop |lot |fan |mdl |glbl |postmanned?[no]
@@ -30,39 +31,241 @@ fbouser
         -fboupuserpassword |lot |fan |mdl |glbl |postmanned?[no]
         -fboupuseraccess |lot |fan |mdl |glbl |postmanned?[no]
         -fbogetuseraccess |lot |fan |mdl |glbl |postmanned?[no]
+
    
-   
-   
-   
-   
-   
-   
-   
+objects  
+-obdxfrvars |
+
+      
+up next
+users
+    -fboauthhelper
+    -fboaddusers
+    -fboadminrequired
+    -fbodelusers
+    -fbomassaddusers
+    -fbomassdelusers
+fboauthhelper
+fboaddusers
+fboadminrequired
+fbodelusers
+fbomassaddusers
+fbomassdelusers
+fboxfrhi
+fboxfrlog
+fboxfrnegative
+fboxfrpositive
+fboxfreject
+fboxfrequest
+fboxfrespond
+fboxfrtags
+fboxfrusers
+tranzakt
+    -fboxfrhi
+    -fboxfrlog
+    -fboxfrnegative
+    -fboxfrpositive
+    -fboxfreject
+    -fboxfrequest
+    -fboxfrespond
+    -fboxfrtags
+    -fboxfrusers
+
+log
+    -fbologprefilters
+    -fbologsavedfilters
+    -fbologetfilters
+    -fbologetrecent
+    -fbologetuser
+    -fbologetmaster
+    
+
+
+auth
+    -fboauthlogin
+    -fboauthregister
+
+
+    
+objects
+    -obduser || obdusermodel
+    -obdxfrconstants
+    -obdxfr || obdxfrmodel
+    -obdlog || obdlogmodel
+    -obdloguser || obdloguserbundle
+    -obdlogwatchlist
+    -obdlogxfrs
+    -obdlognotifications
+
+loop 
+    -fbodeloop
+    -fbomassaddloops
+    -fbomassdeloops
+    -fbodisplays
+    -fbodisplayscard
+    -fbodisplaysuser
+    -fboloopfilters
+    -fboloopmod
+    -fboloopxfr
+
+middleware
+    [log > server]
+    -mwdclientvalidation
+    -mwdservervalidation
+
+
     -
-    -
-    -
-    -
-reports
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -   
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -    
     -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
     -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
     -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
     -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
     -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
+
+
+fbogetxfr
+fboassign
+fboreject
+fborespond
+fborequest
+fboxfrloop
+fbogetlog
+fboaddlog
+fboaddloop
+fbogetloop   
+fboupdateuser
+boadduser
+bodeluser
+boupuseremail
+bogetuseremail
+bogetuser
+boupuserpassword
+boupuseraccess
+bogetuseraccess
+obdxfrvars
+
+  .*
+ ()
+//\\
+
+fbogetxfr
+fboassign
+fboreject
+fborespond
+fborequest
+fboxfrloop
+fbogetlog
+fboaddlog
+fboaddloop
+fbogetloop   
+fboupdateuser
+boadduser
+bodeluser
+boupuseremail
+bogetuseremail
+bogetuser
+boupuserpassword
+boupuseraccess
+bogetuseraccess
+obdxfrvars
+==============================================================
+fboauthhelper
+fboaddusers
+fboadminrequired
+fbodelusers
+fbomassaddusers
+fbomassdelusers
+fboxfrhi
+fboxfrlog
+fboxfrnegative
+fboxfrpositive
+fboxfreject
+fboxfrequest
+fboxfrespond
+fboxfrtags
+fboxfrusers
+fbologprefilters
+fbologsavedfilters
+fbologetfilters
+fbologetrecent
+fbologetuser
+fbologetmaster
+fboauthlogin
+fboauthregister
+obduser
+obdxfrconstants
+obdxfr
+obdlog
+obdloguser
+obdlogwatchlist
+obdlogxfrs
+obdlognotifications
+fbodeloop
+fbomassaddloops
+fbomassdeloops
+fbodisplays
+fbodisplayscard
+fbodisplaysuser
+fboloopfilters
+fboloopmod
+fboloopxfr
+mwdclientvalidation
+mwdservervalidation
+
+\\//
+ ()
+  .*
+
+
+
+
+
+
+
+
+
+
+
+
+
+fboauthhelper
+fboaddusers
+fboadminrequired
+fbodelusers
+fbomassaddusers
+fbomassdelusers
+fboxfrhi
+fboxfrlog
+fboxfrnegative
+fboxfrpositive
+fboxfreject
+fboxfrequest
+fboxfrespond
+fboxfrtags
+fboxfrusers
+fbologprefilters
+fbologsavedfilters
+fbologetfilters
+fbologetrecent
+fbologetuser
+fbologetmaster
+fboauthlogin
+fboauthregister
+obduser
+obdxfrconstants
+obdxfr
+obdlog
+obdloguser
+obdlogwatchlist
+obdlogxfrs
+obdlognotifications
+fbodeloop
+fbomassaddloops
+fbomassdeloops
+fbodisplays
+fbodisplayscard
+fbodisplaysuser
+fboloopfilters
+fboloopmod
+fboloopxfr
+mwdclientvalidation
+mwdservervalidation
