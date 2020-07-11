@@ -1,11 +1,11 @@
-//  -fbogetlog |lot |fan |mdl |glbl
-const LogModel = require('../../../models/recycled_models/log')
 const mongoose = require('mongoose')
-exports.fbogetlog = (req, res, next) => {
+const Loop = require('../../../models/recycled_models/loops')
 
+const mongoose = require('mongoose')
+exports.fbogetloop = (req, res, next) => {
     if (req.method === 'GET') {
-        let getLog = () => {
-            LogModel.find({}, (err, result) => {
+        let getLoop = () => {
+            Loop.find({}, (err, result) => {
                 if (!err) {
                     res.json({
                         result
@@ -20,7 +20,6 @@ exports.fbogetlog = (req, res, next) => {
                 return console.error(err.stack)
             })
         }
-        getLog()
+        getLoop()
     }
 }
-

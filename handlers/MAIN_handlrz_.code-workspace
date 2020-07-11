@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "_handler_subz_",
+			"path": "_handler_subz_"
+		},
+		{
+			"name": "stunning examples",
+			"path": "stunning examples"
+		},
+		{
+			"name": "recycled_handlers",
+			"path": "recycled_handlers"
+		},
+		{
+			"name": "handlers",
+			"path": "."
+		},
+		{
+			"path": "../models"
+		}
+	],
+	"settings": {}
+}
