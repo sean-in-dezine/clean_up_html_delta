@@ -1,57 +1,43 @@
-    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
-    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
-    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
-
 auth
 fboauth
-    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
-    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
-    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
-
+    -
 tranzakt
 fbotranzakt
-    assign
--fboasn |lot |fan |mdl |glbl |postmanned?[no]
-    reject 
--fborej |lot |fan |mdl |glbl |postmanned?[no]
-    respond 
--fborspn |lot |fan |mdl |glbl |postmanned?[no]
-    request 
--fboreq |lot |fan |mdl |glbl |postmanned?[no]
-    [admin]transfer loop-
--fboxflp [admin] |lot |fan |mdl |glbl |postmanned?[no]
-    
-    
-    
+    -fbogetxfr |lot |fan |mdl |glbl |postmanned?[no]
+    -fboassign |lot |fan |mdl |glbl |postmanned?[no]
+    -fboreject |lot |fan |mdl |glbl |postmanned?[no]
+    -fborespond |lot |fan |mdl |glbl |postmanned?[no]
+    -fborequest |lot |fan |mdl |glbl |postmanned?[no]
+    -fboxfrloop [admin] |lot |fan |mdl |glbl |postmanned?[no]
 log
 fbolog
     -fbogetlog |lot |fan |mdl |glbl |postmanned?[no]
     -fboaddlog |lot |fan |mdl |glbl |postmanned?[no]
-    -
-    -
-    -
-    -
-    -
+
 loop
 fboloop
     -fboaddloop |lot |fan |mdl |glbl |postmanned?[no]
     -fbogetloop |lot |fan |mdl |glbl |postmanned?[no]
-    -
-    -
-    -
-    -
-    -
-    -
+
 users [currently still in USER_temp_master.js]
+fbouser
     -fboupdateuser |lot |fan |mdl |glbl |postmanned?[no]
         -fboadduser |lot |fan |mdl |glbl |postmanned?[no]
         -fbodeluser |lot |fan |mdl |glbl |postmanned?[no]
         -fboupuseremail |lot |fan |mdl |glbl |postmanned?[no]
-        -fbogetuseremail
+        -fbogetuseremail |lot |fan |mdl |glbl |postmanned?[no]
         -fbogetuser |lot |fan |mdl |glbl |postmanned?[no]
         -fboupuserpassword |lot |fan |mdl |glbl |postmanned?[no]
         -fboupuseraccess |lot |fan |mdl |glbl |postmanned?[no]
-        -fbogetuseraccess
+        -fbogetuseraccess |lot |fan |mdl |glbl |postmanned?[no]
+   
+   
+   
+   
+   
+   
+   
+   
     -
     -
     -
@@ -64,3 +50,19 @@ reports
     -
     -
     -
+    -   
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -    
+    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
+    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
+    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
+    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
+    -fbo [admin] |lot |fan |mdl |glbl |postmanned?[no]
