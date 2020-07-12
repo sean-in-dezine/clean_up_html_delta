@@ -133,32 +133,20 @@ alias gitupdatetestingenv='git remote add origin https://github.com/sean-in-dezi
 alias gitpushu='git push -u origin master'
 
 # !handlers
-alias gohandle='cd /mnt/c/users/dev/desktop/friday_payday/handlers'
-alias gosubhandle='cd /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_'
-alias gohandlefld='code /mnt/c/users/dev/desktop/friday_payday/handlers'
-alias gosubhandlefld='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_'
 
 # !subs
 # subs - log
-alias fbolog='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/log'
 
 
 
 
 # subs - loop
-alias fboloop='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/loop'
 
 
 
-# subs - users
-alias fbouser='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/users'
-
-#subs - transfer
-alias fbotranzakt='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/tranzakt'
 
 
 # subs - auth
-alias fboauth='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/auth'
 
 # subs - objects
 
@@ -176,81 +164,107 @@ alias gomodusr='code /mnt/c/users/dev/desktop/friday_payday/models/User.js'
 alias gomodtzkt='code /mnt/c/users/dev/desktop/friday_payday/models/Tranzakt.js'
 alias gomodlog='code /mnt/c/users/dev/desktop/friday_payday/models/Log.js'
 
-# !/subs
+
 
 # ?new subs from current list
+# * turn the lots into a workspace, one for each........
+# ? turn the lots into a workspace, one for each........
+# ! turn the lots into a workspace, one for each........
+# * turn the lots into a workspace, one for each........
+# ? turn the lots into a workspace, one for each........
+# ! turn the lots into a workspace, one for each........
 
+# !these r complete below
 alias fbogetxfr='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/log'
 alias fboassign='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/tranzakt'
 alias fbogetlog='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/log/_olog_master_.js'
 alias fboaddlog='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/log/server/server_add_log.js'
 alias fboaddloop='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/loop/_admin_subz_add_loop.js'
 alias fbogetloop='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/loop/_ulid_get.js'
+
 alias obdxfrvars='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/tranzakt/_uxfru_vars.js'
+# !these r complete above
 
 
-
-# ?move up as u go
-# !below needs attention
-alias fbogetuseremail='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbogetuser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboupuserpassword='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboupuseraccess='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbogetuseraccess='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboxfrloop='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/' 
-alias fboupdateuser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboadduser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbodeluser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboupuseremail='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboxfreject='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboxfrequest='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboxfrespond='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
+# !these r for reference below
+# handlers
+alias gohandle='cd /mnt/c/users/dev/desktop/friday_payday/handlers'
+alias gosubhandle='cd /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_'
+alias gohandlefld='code /mnt/c/users/dev/desktop/friday_payday/handlers'
+alias gosubhandlefld='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_'
+#subs -
+alias fbolog='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/log'
+alias fboloop='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/loop'
+alias fbouser='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/users'
+alias fbotranzakt='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/tranzakt'
+alias fboauth='code /mnt/c/users/dev/desktop/friday_payday/handlers/_handler_subz_/auth'
+# !these r for reference above
 
 
-# ?end new subs
+# !these need to be tested below
+alias fbogetuser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_u_get_user.js'
+alias fboupdateuser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_u_subs_update_user_self.js'
+alias fboupuseremail='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_u_subs_update_email.js'
+alias fbogetuseremail='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_u_subs_update_email.js'
+alias fboupuseraccess='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_u_subs_update_permissions.js'
+alias fbogetuseraccess='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_u_subs_update_permissions.js'
+alias fboupuserpassword='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_u_subs_update_password.js'
 
-# *on deck
-alias fboauthhelper='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboadminrequired='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbomassaddusers='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbomassdelusers='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboxfrhi='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboxfrlog='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboxfrnegative='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboxfrpositive='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboxfrtags='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboxfrusers='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbologprefilters='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbologsavedfilters='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbologetfilters='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbologetrecent='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbologetuser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbologetmaster='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboauthlogin='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboauthregister='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias obduser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias obdxfrconstants='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias obdxfr='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias obdlog='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias obdloguser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias obdlogwatchlist='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias obdlogxfrs='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias obdlognotifications='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbodeloop='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbomassaddloops='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbomassdeloops='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbodisplays='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbodisplayscard='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fbodisplaysuser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboloopfilters='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboloopmod='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias fboloopxfr='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias mwdclientvalidation='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
-alias mwdservervalidation='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/'
+alias fboadminrequired='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_admin_subz_admin_required.js'
+alias fbomassaddusers='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_admin_subz_mass_add_users.js'
+alias fbomassdelusers='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_admin_subz_mass_del_users.js'
+alias obduser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/users_obj_modele.js'
+alias fboadduser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_admin_subz_add_user.js'
+alias fbodeluser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/users/_admin_subz_del_user.js'
+# 
+alias fboxfrloop='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_uxfru_xfr.js' 
+alias fboxfreject='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_uxfru_reject.js'
+alias fboxfrequest='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_uxfru_request.js'
+alias fboxfrespond='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_uxfru_respond.js'
+alias fboxfrhi='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_uxfru_heirarchy.js'
+alias fboxfrlog='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_uxfru_log.js'
+alias fboxfrnegative='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_uxfru_negative.js'
+alias fboxfrpositive='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_uxfru_positive.js'
+alias fboxfrtags='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_uxfru_tags.js'
+alias fboxfrusers='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_uxfru_users.js'
+alias obdxfrconstants='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/tranzakt_constants.js'
+alias obdxfr='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/tranzakt/_tranzakt_obj_modele.js'
+# 
+alias fboauthhelper='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/auth/_u_subz_auth_helper.js'
+alias fboauthlogin='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/auth/_u_subz_login.js'
+alias fboauthregister='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/auth/_u_subz_register.js'
+# 
+alias fbologprefilters='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/_olog_filters_pre.js'
+alias fbologsavedfilters='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/_olog_filters_saved.js'
+alias fbologetfilters='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/_olog_get_filters.js'
+alias fbologetrecent='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/_olog_get_recent.js'
+alias fbologetuser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/_olog_get_user.js'
+alias fbologetmaster='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/_olog_master_.js'
+alias obdlog='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/_olog_strict_modele_.js'
+alias obdloguser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/_olog_get_user.js'
+alias obdlogwatchlist='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/_olog_watchlist_.js'
+alias obdlogxfrs='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/_olog_xfrs_.js'
+alias obdlognotifications='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/notification_protocol.js'
+alias mwdclientvalidation='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/server/client_validation.js'
+alias mwdservervalidation='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/log/server_validation.js'
+# 
+alias fbodeloop='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/loop/_admin_subz_del_loop.js'
+alias fbomassaddloops='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/loop/_admin_subz_mass_add_loop.js'
+alias fbomassdeloops='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/loop/_admin_subz_mass_del_loop.js'
+alias fbodisplays='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/loop/_ulid_displays.js'
+alias fbodisplayscard='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/loop/_ulid_displays_card.js'
+alias fbodisplaysuser='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/loop/_ulid_displays_user.js'
+alias fboloopfilters='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/loop/_ulid_filters.js'
+alias fboloopmod='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/loop/_ulid_mod.js'
+alias fboloopxfr='code /mnt/c/users/dev/desktop/friday_payday/_handler_subz_/loop/_ulid_xfr.js'
 
-# !above needs attention
-# *end on deck
 
+# * turn the lots into a workspace, one for each........
+# ? turn the lots into a workspace, one for each........
+# ! turn the lots into a workspace, one for each........
+# * turn the lots into a workspace, one for each........
+# ? turn the lots into a workspace, one for each........
+# ! turn the lots into a workspace, one for each........
 
 # !lots
 
