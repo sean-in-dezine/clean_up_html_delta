@@ -1,0 +1,255 @@
+
+||||||||||||||
+|____________|
+| Section 1  |
+|____________|
+|____________|
+| incomplete |
+|____________|
+||||||||||||||
+|____________|
+
+
+--------------
+|register    |
+--------------
+-sign up
+-validation
+    -front
+    -back
+    
+-major functions {fn: ['function(params)'], file: ['/path/'], purpose: ''}
+-objects
+-notes    
+
+
+
+
+
+
+
+--------------
+|auth        | 
+--------------
+-major functions
+-notes
+--------------
+|login       |
+-validation
+    -front
+    -back---------
+-----
+
+-major functions
+-notes
+-validation
+    -front
+    -back
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+||||||||||||||
+|____________|
+| Section 2  |
+|____________|
+|____________|
+| incomplete |
+|____________|
+||||||||||||||
+|____________|
+--------------
+|pending   |
+--------------
+-design 
+-buttons in place to react to user's clicks and selections
+
+                                                        {pre fetch cycles and css}
+        -requests
+-fetch pending by uid
+        -body           {frontend: format} {backend: format} {chunky shit to deal with and how we deal with it}
+-validation
+    -front       {data coming in as} {data going out as}
+    -back
+-responses                             {data} {display effects/affecting it by doing ____} {user's next available options} {cycles}
+
+
+
+
+
+-major functions
+-notes
+-objects
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------
+|auth        | 
+--------------
+-major functions
+-notes
+--------------
+|login       |
+--------------
+-validation
+    -front
+    -back
+-major functions
+-notes
+-objects
+||||||||||||||
+| Section 3  |
+|____________|
+--------------
+|register    |
+--------------
+-major functions
+-notes
+objects
+--------------
+|auth        | 
+--------------
+-major functions
+-notes
+objects
+--------------
+|login       |
+--------------
+-validation
+    -front
+    -back
+-major functions
+-notes
+objects
+||||||||||||||
+| Section 4  |
+|____________|
+--------------
+|register    |
+--------------
+-major functions
+-notes
+objects
+--------------
+|auth        | 
+--------------
+-major functions
+-notes
+objects
+--------------
+|login       |
+--------------
+-validation
+    -front
+    -back
+-major functions
+-notes
+objects
+||||||||||||||
+| Section 5  |
+|____________|
+--------------
+|register    |
+--------------
+-major functions
+-notes
+objects
+--------------
+|auth        | 
+--------------
+-major functions
+-notes
+objects
+--------------
+|login       |
+--------------
+-validation
+    -front
+    -back
+-major functions
+-notes
+objects
+||||||||||||||
+| Section 6  |
+|____________|
+--------------
+|register    |
+--------------
+
+--------------
+|auth        | 
+--------------
+
+--------------
+|login       |
+-validation
+    -front
+    -back---------
+-----
+
+
+
+
+# *----------------------------
+# *-------------------------
+# *----------------------
+# *-------------------
+# *----------------
+# *--------------
+# *-------------
+# *------------
+# *-----------
+# *----------
+# *---------
+# *--------
+# *-------
+
+
+
+
+
+
+
+
+
+
+
+
+
+# *-------
+# *--------
+# *---------
+# *----------
+# *-----------
+# *------------
+# *-------------
+# *--------------
+# *----------------
+# *-------------------
+# *----------------------
+# *-------------------------
+# *----------------------------

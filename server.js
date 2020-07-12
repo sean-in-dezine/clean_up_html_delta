@@ -33,11 +33,18 @@ handlers = handlers.handlers;
 handlers();
 app.use(router);
 
+
+
+// ! route @ "/" [index]
+// *|auth |login |inception
+// ?method: 'GET' lot: 
 app.get("/", (req, res, next) => {
   console.log(req.url, req.method);
   console.log(req.originalUrl, req.method);
   res.sendFile(__dirname + "/auth.html");
 });
+// ! route @ "/" [index]
+// *|auth |login |inception
 app.post("/", (req, res, next) => {
   console.log(req.url, req.method);
   console.log(req.originalUrl, req.method);

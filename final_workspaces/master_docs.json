@@ -1,0 +1,38 @@
+{
+    "major functions": {
+        "function": "()",
+        "path": "/",
+        "purpose": ""
+    },
+    "fetches": {
+        "function": "()",
+        "path": "/",
+        "purpose": ""
+    },
+    "objects": {
+        "function": "()",
+        "path": "/",
+        "purpose": ""
+    },
+    "validators": {
+        "function": "()",
+        "path": "/",
+        "purpose": ""
+    },
+    "[auth| fetch| -> /users": {
+        "function": "getUsers(ev, req)",
+        "method": "post",
+        "path": "~/public/auth.js",
+        "line": "97",
+        "event listener": "true",
+        "purpose": "submit one user's name"
+    },
+    "[auth| fetch| -> /register": {
+        "function": "getUsers(ev, req)",
+        "method": "post",
+        "path": "~/public/auth.js",
+        "line": "97",
+        "event listener": "true",
+        "purpose": "submit one user's name"
+    },
+}
